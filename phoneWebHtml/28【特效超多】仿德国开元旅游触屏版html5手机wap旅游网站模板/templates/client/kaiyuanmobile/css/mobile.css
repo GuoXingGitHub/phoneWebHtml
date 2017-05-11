@@ -1,0 +1,35 @@
+.ky_main{width: 320px;margin: 0 auto;}
+.ky_main a:active p{ color:#000; }
+.ky_download{ position:relative; height:60px; border:1px solid #e7e7e7; background:-webkit-linear-gradient(top, #f1f1f1 0%,#d2d2d2 100%);}
+.ky_download .logo{background:url(../images/logo.png) 0 0 no-repeat;background-size:100% 100%;}
+.ky_download .close{ position:absolute; top:5px; left:5px; width:19px; height:22px;}
+.ky_download .logo{ position:absolute; top:9px; left:30px; width:45px; height:45px;}
+.ky_download .download_btn{ position:absolute; top:21px; right:10px; width:45px; height:23px; border-radius:5px; border:1px solid #b4b4b4; text-align:center; line-height:23px;background:-webkit-linear-gradient(top, #f1f1f1 0%,#d2d2d2 100%); font-size:14px;}
+.ky_download .title{ position:absolute; top:16px; left:84px; width:164px; -webkit-text-size-adjust:none; font-size:11px;}
+.ky_download .title p{ white-space: nowrap;text-overflow:ellipsis; overflow:hidden;}
+.ky_mt10 p{margin-top:10px}
+
+.ky_carousel { padding:15px 10px 0 10px;}
+.ky_carousel .carousel{ position:relative; height:240px;overflow:hidden;}
+.ky_carousel .carousel ul{ position:absolute; top:0px; left:0px; width:300px; overflow:hidden;}
+.ky_carousel .carousel li{ display:inline-block;margin-right:13px; margin-bottom:10px; text-align:center;color:#4a4a4a;font-size:14px; padding:2px 0 0 2px;}
+
+.ky_carousel .carousel a{ display:inline-block; width:100%; height:100%;}
+.ky_carousel .carousel .icon{ position:relative; width:130px; height:90px; margin-bottom:5px; background:url(../images/man_logo.png) 0 0 no-repeat; background-size:450px 90px;}
+.ky_carousel .carousel .icon.hover:after{ content:' '; position:absolute; top:-2px; left:-2px; width:64px; height:64px; background:black; opacity:0.25; border-radius:3px;}
+
+.carousel li:active{background: #eee;}
+
+.ky_carousel .carousel .flight{ background-position:-100px 0;}
+.ky_carousel .carousel .hotel{ background-position:20px 0;}
+.ky_carousel .carousel .dhl{ background-position:-340px 0;}
+.ky_carousel .carousel .qz{ background-position:-220px 0;}
+
+
+/* 轮播图 */
+.ky_slide { position : relative; height:150px; overflow:hidden;}
+.ky_slide .content{ width:100%; height:100%; -webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.ky_slide a { display:inline-block; float:left; width:320px; height:150px; }
+.ky_slide .mark { position: absolute; width: 100%; height: 3px; bottom: 0; background-color: rgba(51,51,51,0.5); -webkit-transform: translate3d(0,0,0); display: -webkit-box;} 
+.ky_slide .mark li { display: block; -webkit-box-flex: 1; height: 100%; overflow: hidden;}
+.ky_slide .mark li.active { background-color:#25a4bb;}

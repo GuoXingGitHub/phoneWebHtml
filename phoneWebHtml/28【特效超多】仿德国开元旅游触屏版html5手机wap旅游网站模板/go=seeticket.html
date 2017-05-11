@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+<title>仿德国开元旅游触屏版html5手机wap旅游网站模板下载机票预定</title>
+<link rel="stylesheet" href="templates/client/kaiyuanmobile/css/mobileyes.css">
+
+<script type="text/javascript" src="http://www.kaiyuan.eu/templates/client/kaiyuanmobile/js/all.js"></script>
+<script type="text/javascript">
+var sysTime='1397009895',sphone='',sname='';
+window.init = function(){
+	Taxi.index.init();
+};
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</head><body>
+<div class="ky_main">
+<div class="ky_pages">
+			<div  id="searchPage">
+			<div class="v-page"  id="main-page" >
+				<div class="ky_head">
+					<a class="back_home" onclick="window.history.back()" href="javascript:">
+						<i></i>
+					</a>
+					<h1>特价机票查询</h1>
+					<div class="logo"></div>
+				</div>
+				<div class="ky_page">
+					<ul id="ky_tabs" class="ky_tabs">
+						<li class="active">往返机票</li>
+						<li class="">单程机票</li>
+						<li class="" >机票活动</li>
+					</ul>
+				<div class="ky_pa10">
+					<form action="go=ticket.html" method="post">
+					<input type="hidden" value="München (MUC)" id="fcity"  name="fcity" class="hiddeninput"/>
+					<input type="hidden" value="Shanghai Pudong (PVG)" id="tcity"  name="tcity" class="hiddeninput"/>
+					<input type="hidden" value="2014-04-16" id="ftime"  name="ftime" class="hiddeninput"/>
+					<input type="hidden" value="2014-04-30" id="rtime"  name="rtime" class="hiddeninput"/>
+					<input type="hidden" value="1" id="gotype" name="gotype" />
+					
+					
+					
+					<div class="tabbox">
+						<div class="qo_item clrfix">
+							<div class="qo_type_ticket">出发地点</div>
+							<div class="ky_ticketinput">
+							<input id="tfromcity"  readonly="readonly" class="ky_required_input city"  date_id="fcity" type="text" name="fromcity" placeholder="出发的城市拼音" validator="notEmpty" value="München (MUC)">
+							</div>
+						</div>
+						<div class="qo_item clrfix">
+							<div class="qo_type_ticket">目的地点</div>
+							<div class="ky_ticketinput">
+								<input id="ttocity" readonly="readonly" class="ky_required_input city" date_id="tcity" type="text" name="tocity" placeholder="到达的城市拼音" validator="notEmpty" value="Shanghai Pudong (PVG)">
+							</div>
+						</div>
+						<div class="qo_item clrfix" style="margin-top:20px">
+							<div class="qo_type_ticket">出发日期</div>
+							<div class="ky_ticketinput">
+								<input id="tfromtime" readonly="readonly" date_id="ftime"  class="ky_required_input calendar" type="text" name="formtime" placeholder="出发的时间" validator="notEmpty" value="2014-04-16" >
+							</div>
+						</div>
+						<div class="qo_item clrfix" id="retime_div">
+							<div class="qo_type_ticket">返回日期</div>
+							<div class="ky_ticketinput">
+							<input id="ttotime" readonly="readonly"  date_id="rtime" class="ky_required_input calendar" type="text" name="retruntime" placeholder="请选择返回的日期" validator="notEmpty" value="2014-04-30">
+							</div>
+						</div>
+						
+						<div class="qo_item clrfix" style="margin-top:10px">
+							<div class="qo_type_ticket"> 航班条件 </div>
+							<div class="ky_ticketinput psgnum">
+								<input  id="psg" readonly="readonly"  class="ky_required_input psgnum" name="psg"   type="text" value="1 成人 非直航 经济舱" />
+							</div>
+						</div>
+					</div>
+					
+				
+					<div class="book_new ky_mt10"><a id="t_selectSubm"> 查  询 </a></div>
+					
+					<div style="display: none;" class="ky_cityTip">“单程”</div>
+					<div class="ky_cityTip" style="display:block">“机票查询提示:请选择您需要的乘客类型和人数”</div>
+				</div>
+					
+				</div>
+			
+				<div class="ky_footer">
+						<ul id="kyFooterIcons" class="main_nav">
+						<li class="flight">
+							<a href="@go=seeticket">
+								<div class="icon "></div>
+								<span class="title">机票</span>
+							</a>
+						</li>
+						<li class="travel">
+							<a href="@go=allpro">
+								<div class="icon "></div>
+								<span class="title">度假</span>
+							</a>
+						</li>
+						<li class="dhl">
+							<a href="art_3449.html">
+								<div class="icon "></div>
+								<span class="title">DHL</span>
+							</a>
+						</li>
+						<li class="qz">
+							<a href="art_3448.html">
+								<div class="icon "></div>
+								<span class="title">签证</span>
+							</a>
+						</li>
+					</ul>
+					<ul id="kyFooter" class="footer_nav clearfix">
+						<li>
+							<a id="memberlogin" mid="0" href="view_logging.html">登录</a>
+		<script language="JavaScript">
+			$(document).ready(function(){
+				//if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("退出").attr("href", "@go=logging&do=logout");
+				if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("线路推广").attr("href", "ajax.php@propro=1");
+			});
+		</script>
+						</li>
+						<li>
+							<a href="@go=usercenter" id="usercenter">我的订单</a>
+						</li>
+						<li>
+							<a href="art_3015.html">关于我们</a>
+						</li>
+						<li>
+							<a href="art_3013.html">联系方式</a>
+						</li>
+					</ul>
+					<ul class="mobile_pc clearfix">
+						<li class="active">
+							<a href="default.htm">触屏版</a>
+						</li>
+						<li >
+							<a href="../www.kaiyuan.eu/default.htm">电脑版</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						<span>Kaiyuan 京ICP备11045617</span>
+						<a class="qn_ml25" href="mailto:service@kaiyuan.de">意见反馈</a>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+	<!-- 日期弹出框 -->
+	<div style="transform: translate3d(1440px, 0px, 0px); display: none;" class="newky_page" id="calendarPage">
+				<div class="qn_header">
+					<div class="back">
+						<a href="#searchPage">后退</a>
+					</div>
+					<div class="title">日期选择</div>
+				</div>
+				<div class="qn_index_list qn_calendar ">			
+					
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">4月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="null" > </td><td class="null" > </td><td class="disable" data-day="2014-4-1">1</td><td class="disable" data-day="2014-4-2">2</td><td class="disable" data-day="2014-4-3">3</td><td class="disable" data-day="2014-4-4">4</td><td class="disable" data-day="2014-4-5">5</td></tr>
+	<tr class="days"><td class="disable" data-day="2014-4-6">6</td><td class="disable" data-day="2014-4-7">7</td><td class="disable" data-day="2014-4-8">8</td><td class="dayable" data-day="2014-4-9">9</td><td class="dayable" data-day="2014-4-10">10</td><td class="dayable" data-day="2014-4-11">11</td><td class="dayable" data-day="2014-4-12">12</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-4-13">13</td><td class="dayable" data-day="2014-4-14">14</td><td class="dayable" data-day="2014-4-15">15</td><td class="dayable" data-day="2014-4-16">16</td><td class="dayable" data-day="2014-4-17">17</td><td class="dayable" data-day="2014-4-18">18</td><td class="dayable" data-day="2014-4-19">19</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-4-20">20</td><td class="dayable" data-day="2014-4-21">21</td><td class="dayable" data-day="2014-4-22">22</td><td class="dayable" data-day="2014-4-23">23</td><td class="dayable" data-day="2014-4-24">24</td><td class="dayable" data-day="2014-4-25">25</td><td class="dayable" data-day="2014-4-26">26</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-4-27">27</td><td class="dayable" data-day="2014-4-28">28</td><td class="dayable" data-day="2014-4-29">29</td><td class="dayable" data-day="2014-4-30">30</td><td class="null" > </td><td class="null" > </td><td class="null" > </td></tr>
+	</tbody>
+	</table>
+	
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">5月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="dayable" data-day="2014-5-1">1</td><td class="dayable" data-day="2014-5-2">2</td><td class="dayable" data-day="2014-5-3">3</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-5-4">4</td><td class="dayable" data-day="2014-5-5">5</td><td class="dayable" data-day="2014-5-6">6</td><td class="dayable" data-day="2014-5-7">7</td><td class="dayable" data-day="2014-5-8">8</td><td class="dayable" data-day="2014-5-9">9</td><td class="dayable" data-day="2014-5-10">10</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-5-11">11</td><td class="dayable" data-day="2014-5-12">12</td><td class="dayable" data-day="2014-5-13">13</td><td class="dayable" data-day="2014-5-14">14</td><td class="dayable" data-day="2014-5-15">15</td><td class="dayable" data-day="2014-5-16">16</td><td class="dayable" data-day="2014-5-17">17</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-5-18">18</td><td class="dayable" data-day="2014-5-19">19</td><td class="dayable" data-day="2014-5-20">20</td><td class="dayable" data-day="2014-5-21">21</td><td class="dayable" data-day="2014-5-22">22</td><td class="dayable" data-day="2014-5-23">23</td><td class="dayable" data-day="2014-5-24">24</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-5-25">25</td><td class="dayable" data-day="2014-5-26">26</td><td class="dayable" data-day="2014-5-27">27</td><td class="dayable" data-day="2014-5-28">28</td><td class="dayable" data-day="2014-5-29">29</td><td class="dayable" data-day="2014-5-30">30</td><td class="dayable" data-day="2014-5-31">31</td></tr>
+	</tbody>
+	</table>
+	
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">6月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="dayable" data-day="2014-6-1">1</td><td class="dayable" data-day="2014-6-2">2</td><td class="dayable" data-day="2014-6-3">3</td><td class="dayable" data-day="2014-6-4">4</td><td class="dayable" data-day="2014-6-5">5</td><td class="dayable" data-day="2014-6-6">6</td><td class="dayable" data-day="2014-6-7">7</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-6-8">8</td><td class="dayable" data-day="2014-6-9">9</td><td class="dayable" data-day="2014-6-10">10</td><td class="dayable" data-day="2014-6-11">11</td><td class="dayable" data-day="2014-6-12">12</td><td class="dayable" data-day="2014-6-13">13</td><td class="dayable" data-day="2014-6-14">14</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-6-15">15</td><td class="dayable" data-day="2014-6-16">16</td><td class="dayable" data-day="2014-6-17">17</td><td class="dayable" data-day="2014-6-18">18</td><td class="dayable" data-day="2014-6-19">19</td><td class="dayable" data-day="2014-6-20">20</td><td class="dayable" data-day="2014-6-21">21</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-6-22">22</td><td class="dayable" data-day="2014-6-23">23</td><td class="dayable" data-day="2014-6-24">24</td><td class="dayable" data-day="2014-6-25">25</td><td class="dayable" data-day="2014-6-26">26</td><td class="dayable" data-day="2014-6-27">27</td><td class="dayable" data-day="2014-6-28">28</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-6-29">29</td><td class="dayable" data-day="2014-6-30">30</td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td></tr>
+	</tbody>
+	</table>
+	
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">7月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="null" > </td><td class="null" > </td><td class="dayable" data-day="2014-7-1">1</td><td class="dayable" data-day="2014-7-2">2</td><td class="dayable" data-day="2014-7-3">3</td><td class="dayable" data-day="2014-7-4">4</td><td class="dayable" data-day="2014-7-5">5</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-7-6">6</td><td class="dayable" data-day="2014-7-7">7</td><td class="dayable" data-day="2014-7-8">8</td><td class="dayable" data-day="2014-7-9">9</td><td class="dayable" data-day="2014-7-10">10</td><td class="dayable" data-day="2014-7-11">11</td><td class="dayable" data-day="2014-7-12">12</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-7-13">13</td><td class="dayable" data-day="2014-7-14">14</td><td class="dayable" data-day="2014-7-15">15</td><td class="dayable" data-day="2014-7-16">16</td><td class="dayable" data-day="2014-7-17">17</td><td class="dayable" data-day="2014-7-18">18</td><td class="dayable" data-day="2014-7-19">19</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-7-20">20</td><td class="dayable" data-day="2014-7-21">21</td><td class="dayable" data-day="2014-7-22">22</td><td class="dayable" data-day="2014-7-23">23</td><td class="dayable" data-day="2014-7-24">24</td><td class="dayable" data-day="2014-7-25">25</td><td class="dayable" data-day="2014-7-26">26</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-7-27">27</td><td class="dayable" data-day="2014-7-28">28</td><td class="dayable" data-day="2014-7-29">29</td><td class="dayable" data-day="2014-7-30">30</td><td class="dayable" data-day="2014-7-31">31</td><td class="null" > </td><td class="null" > </td></tr>
+	</tbody>
+	</table>
+	
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">8月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="dayable" data-day="2014-8-1">1</td><td class="dayable" data-day="2014-8-2">2</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-8-3">3</td><td class="dayable" data-day="2014-8-4">4</td><td class="dayable" data-day="2014-8-5">5</td><td class="dayable" data-day="2014-8-6">6</td><td class="dayable" data-day="2014-8-7">7</td><td class="dayable" data-day="2014-8-8">8</td><td class="dayable" data-day="2014-8-9">9</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-8-10">10</td><td class="dayable" data-day="2014-8-11">11</td><td class="dayable" data-day="2014-8-12">12</td><td class="dayable" data-day="2014-8-13">13</td><td class="dayable" data-day="2014-8-14">14</td><td class="dayable" data-day="2014-8-15">15</td><td class="dayable" data-day="2014-8-16">16</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-8-17">17</td><td class="dayable" data-day="2014-8-18">18</td><td class="dayable" data-day="2014-8-19">19</td><td class="dayable" data-day="2014-8-20">20</td><td class="dayable" data-day="2014-8-21">21</td><td class="dayable" data-day="2014-8-22">22</td><td class="dayable" data-day="2014-8-23">23</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-8-24">24</td><td class="dayable" data-day="2014-8-25">25</td><td class="dayable" data-day="2014-8-26">26</td><td class="dayable" data-day="2014-8-27">27</td><td class="dayable" data-day="2014-8-28">28</td><td class="dayable" data-day="2014-8-29">29</td><td class="dayable" data-day="2014-8-30">30</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-8-31">31</td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td></tr>
+	</tbody>
+	</table>
+	
+	<table>
+	<thead>
+		<tr>
+			<td colspan="7">
+				<h5>2014年<span class="qn_blue">9月</span></h5>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr class="weeks">
+		<th class="weekend">周日</th>
+		<th>周一</th>
+		<th>周二</th>
+		<th>周三</th>
+		<th>周四</th>
+		<th>周五</th>
+		<th class="weekend">周六</th>
+	</tr><tr class="days"><td class="null" > </td><td class="dayable" data-day="2014-9-1">1</td><td class="dayable" data-day="2014-9-2">2</td><td class="dayable" data-day="2014-9-3">3</td><td class="dayable" data-day="2014-9-4">4</td><td class="dayable" data-day="2014-9-5">5</td><td class="dayable" data-day="2014-9-6">6</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-9-7">7</td><td class="dayable" data-day="2014-9-8">8</td><td class="dayable" data-day="2014-9-9">9</td><td class="dayable" data-day="2014-9-10">10</td><td class="dayable" data-day="2014-9-11">11</td><td class="dayable" data-day="2014-9-12">12</td><td class="dayable" data-day="2014-9-13">13</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-9-14">14</td><td class="dayable" data-day="2014-9-15">15</td><td class="dayable" data-day="2014-9-16">16</td><td class="dayable" data-day="2014-9-17">17</td><td class="dayable" data-day="2014-9-18">18</td><td class="dayable" data-day="2014-9-19">19</td><td class="dayable" data-day="2014-9-20">20</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-9-21">21</td><td class="dayable" data-day="2014-9-22">22</td><td class="dayable" data-day="2014-9-23">23</td><td class="dayable" data-day="2014-9-24">24</td><td class="dayable" data-day="2014-9-25">25</td><td class="dayable" data-day="2014-9-26">26</td><td class="dayable" data-day="2014-9-27">27</td></tr>
+	<tr class="days"><td class="dayable" data-day="2014-9-28">28</td><td class="dayable" data-day="2014-9-29">29</td><td class="dayable" data-day="2014-9-30">30</td><td class="null" > </td><td class="null" > </td><td class="null" > </td><td class="null" > </td></tr>
+	</tbody>
+	</table>
+	
+				</div>
+	</div>
+	<!--机票城市查询-->
+	<div style="transform: translate3d(1440px, 0px, 0px); display: none;" class="newky_page" id="cityPage">
+		<div class="qn_header">
+				<div class="back">
+						<a href="#searchPage">后退</a>
+				</div>
+				<div class="title">城市选择</div>
+		</div>
+		<div class="qn_index_list">
+			<div class="search">
+				<div class="search_icon fl"></div>
+				<div class="delete_icon fr"></div>
+				<div class="input">
+						<input id="searchcity" class="" type="text"   placeholder="搜索城市拼音名称"  data-val="">
+				</div>
+			</div>
+			<dl id="city_list" class="content ">
+				<dd>Frankfurt (FRA)</dd>
+				<dd>München (MUC)</dd>
+				<dd>Berlin Tegel (TXL)</dd>
+				<dd>Bremen Neuenland (BRE)</dd>
+				<dd>Hamburg Fuhlsbüttel (HAM)</dd>
+				<dd>Düsseldorf (DUS)</dd>
+				
+				<dd>Beijing (BJS)</dd>
+				<dd>Shanghai Pudong (PVG)</dd>
+			
+				<dd>Guangzhou (CAN)</dd>
+				<dd>Hong Kong (HKG)</dd>
+				
+				
+			</dl>
+		</div>
+	</div>
+	<!--乘客人数选择-->
+	<div style="transform: translate3d(1440px, 0px, 0px); display: none;" class="newky_page" id="psgPage">
+		<div class="qn_header">
+				<div class="back">
+						<a href="#searchPage">后退</a>
+				</div>
+				<div class="title">选择乘客人数和航班类型</div>
+		</div>
+		<div class="qn_index_list">
+			<div id="psgForm" class="ky_pa10 clrfix">
+				<div class="qo_item clrfix">
+						<div class="qo_type_ticket"> 成  人  </div>
+						<div class="ky_order_ticketinput">
+							<select name="dafultpsg" id="dafultpsg" class="ky_required_input ">
+								<option value="0">0</option>
+								<option value="1" selected="selected" >1位</option>
+								<option value="2">2位</option>
+								<option value="3">3位</option>
+								<option value="4">4位</option>
+								<option value="5">5位</option>
+								<option value="6">6位</option>
+							</select>
+						</div>
+				</div>
+				<div class="qo_item clrfix">
+						<div class="qo_type_ticket">儿童(2-11) </div>
+						<div class="ky_order_ticketinput">
+							<select name="childpsg" id="childpsg" class="ky_required_input ">
+								<option value="0">0</option>
+								<option value="1">1位</option>
+								<option value="2">2位</option>
+								<option value="3">3位</option>
+								<option value="4">4位</option>
+								<option value="5">5位</option>
+								<option value="6">6位</option>
+							</select>
+						</div>
+				</div>
+				<div class="qo_item clrfix">
+						<div class="qo_type_ticket"> 婴儿(age<2) </div>
+						<div class="ky_order_ticketinput">
+							<select name="babypsg" id="babypsg" class="ky_required_input ">
+								<option value="0">0</option>
+								<option value="1">1位</option>
+								<option value="2">2位</option>
+								<option value="3">3位</option>
+								<option value="4">4位</option>
+								<option value="5">5位</option>
+								<option value="6">6位</option>
+							</select>
+						</div>
+				</div>
+				
+				<div class="qo_item clrfix " style="margin-top:10px">
+						<div class="qo_type_ticket">是否直航 </div>
+						<div class="ky_order_ticketinput">
+							<select name="ticketzh" id="ticketzh" class="ky_required_input ">
+								<option selected="selected" value="0">否</option>
+								<option value="1">是</option>
+								
+							</select>
+						</div>
+				</div>
+				<div class="qo_item clrfix " >
+						<div class="qo_type_ticket"> 舱 位 </div>
+						<div class="ky_order_ticketinput">
+							<select name="ticketcw" id="ticketcw" class="ky_required_input ">
+								<option selected="selected" value="ECONOMY">经济舱</option>
+								<option value="FIRST">头等舱</option>
+								<option value="BUSINESS">商务舱</option>
+							</select>
+						</div>
+				</div>
+			</div>
+			<div class="ky_pa10">
+					<div class="book_new ">
+						<a id="psgnum_sub"> 保 存 </a>
+					</div>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+</div>	
+<div id="otaDialog"></div>
+<div id="loading_box" style="position:absolute;left:45%;top:30%;height:33px;width:29px;background:url(templates/client/kaiyuanmobile/images/newloading.gif) no-repeat;background-size:100% auto;display:none"></div>
+	
+</body></html>

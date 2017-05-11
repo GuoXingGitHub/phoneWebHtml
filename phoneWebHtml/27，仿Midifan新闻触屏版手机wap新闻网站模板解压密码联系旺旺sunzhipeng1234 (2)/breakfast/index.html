@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>仿KFC肯德基3G触屏版手机wap购物订餐网站模板早餐</title>
+        <link rel="apple-touch-icon" href="../common/kfc-icon.png"/>
+        <link rel="stylesheet" href="common/css/layout.css"/>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script>var channel = '20'</script>
+        <script src="../common/trackEvent.js"></script>
+        <script src="common/js/iscroll.js"></script>
+        <script src="common/js/iscroll-setup.js"></script>
+        <script src="common/js/animate.control.js"></script>
+        <script src="common/js/cookie.js"></script>
+        <script src="../common/header.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+        	<div class="tnav">
+            	<figure><img src="common/images/nav-app.jpg" alt="" width="100%" /></figure>
+                <div class="change" style="display:none;"><a href="../index.html"><img src="common/images/header-img.jpg" alt="" width="100%" /></a></div>
+                <a class="download-app" href="../index.html"></a> 
+                <a class="kfc-b" onClick="track(channel,4174);" href="javascript:void(0);" title="早餐"></a>
+                <a class="kfc-l" onClick="track(channel,4175,'../lunch/index.html');" href="javascript:void(0);" title="午餐"></a>
+                <a class="kfc-t" onClick="track(channel,4176,'../teatime/index.html');" href="javascript:void(0);" title="下午茶"></a>
+                <a class="kfc-d" onClick="track(channel,4177,'../dinner/index.html');" href="javascript:void(0);" title="晚餐"></a>
+                <a class="kfc-24" onClick="track(channel,4178,'../24h/index.html');" href="javascript:void(0);" title="夜宵"></a>
+            </div>
+            <div class="ctop">
+            	<header>
+                    <div class="title">
+                        <div class="t t-1">五</div>
+                        <div class="t t-2">好</div>
+                        <div class="t t-3">早</div>
+                        <div class="t t-4">餐</div>
+                    </div>
+                    
+                    <div class="icon icon-1">好安心</div>
+                    <div class="icon icon-2">好创新</div>
+                    <div class="icon icon-3">好丰富</div>
+                    <div class="icon icon-4">好超值</div>
+                    <div class="icon icon-5">好便捷</div>
+                
+                <!--<a href="javascript:shareToBlog('sina','root')" class="share share-1">新浪微博</a>
+                <a href="javascript:shareToBlog('renren','root')" class="share share-2">人人网</a>
+                <a href="javascript:shareToBlog('tecent','root')" class="share share-3">腾讯微博</a>-->
+            </header>
+            	<div style="position:relative;bottom:4px;z-index:0;">
+                	<div style="width:100%;height:4px; background:#fff;"></div>
+                </div>
+            	<div class="balloon balloon-1">balloon1</div>
+                <div class="balloon balloon-2">balloon2</div>
+                <!--<div class="balloon balloon-3">balloon3</div>-->
+                
+                <div class="clock clock-1 shaking">clock1</div>
+                <div class="clock clock-2 shaking">clock2</div>
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+            </div>
+            <section class="share-mod">
+            	<figure>
+                	<img src="common/images/share-bg.jpg" alt="" width="100%" />
+                </figure>
+                
+                <div class="s-text">
+                	<div id="wrapp" class="s-alide">
+                    	<ul class="clearfix">
+                        	<li>#肯德基五好早餐#咕噜咕噜咕噜……肚子又叫唤了。偶想吃KFC五好早餐，你懂的！</li>
+                            <li>#肯德基五好早餐#人是铁饭是钢，早餐不吃饿得慌。亲，来一份KFC五好早餐，赶紧着！</li>
+                            <li>#肯德基五好早餐#一份早餐，不二之选，三天不吃，四体不勤，KFC五好早餐，今天你吃了没？</li>
+                        </ul>
+                    </div>
+                    <a class="prev" onClick="myScroll2.scrollToPage('prev', 0);return false" href="javascript:;"></a>
+                    <a class="next" onClick="myScroll2.scrollToPage('next', 0);return false" href="javascript:;"></a>
+                </div>
+                
+                <div class="s-butt">
+                	<a href="javascript:shareToBlog('sina','root')" class="share share-1">新浪微博</a>
+                    <a href="javascript:shareToBlog('tecent','root')" class="share share-2">腾讯微博</a>
+                    <a href="javascript:shareToBlog('renren','root')" class="share share-3">人人网</a>
+                </div>
+                
+            </section>
+            <section class="content">
+            	
+                <div class="package">
+                    <img src="common/images/fnew.jpg" alt="" width="100%" />
+                </div>
+            
+                <div class="package">
+                    <img src="common/images/f1.jpg" alt="" width="100%" />
+                </div>
+                
+                <div class="package">
+                    <img src="common/images/f2.jpg" alt="" width="100%" />
+                </div>
+                
+                <div class="package">
+                    <img src="common/images/f3.jpg" alt="" width="100%" />
+                </div>
+                
+                
+                <p class="mark">产品以餐厅实际供应为准</p>
+                <p class="tip"><img src="common/images/text.jpg" alt="" width="100%" /></p>
+            </section>
+        </div>
+        <div id="bookmark" style="display:none;"></div>
+        <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fab5e843fcc29ae4c7d4721fe60749b17' type='text/javascript'%3E%3C/script%3E"));
+</script>
+    </body>
+</html>

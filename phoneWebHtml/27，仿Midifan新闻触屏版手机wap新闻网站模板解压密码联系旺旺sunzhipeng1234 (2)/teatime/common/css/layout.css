@@ -1,0 +1,110 @@
+﻿@import "reset.css";
+
+body {
+    -webkit-text-size-adjust: none;
+	
+}
+html,body{ background:#0075be;}
+.container {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width:480px;
+	
+	color:#fff;
+	position:relative;
+}
+a{color:#fff;}
+.sun,#nine,#text{font-size:0;}
+#navlist,#download,.content,#listcon,.sun,#nine,#text{ position:absolute;}
+#navlist,#download{z-index:2;top:0;height:8%;}
+#navlist{width:20%;left:0;}
+#download{width:35%;right:0;}
+#listcon{top:8.4%;left:0;z-index:2;width:174px;height:272px;padding-top:8px; text-align:center;background:rgba(24,198,241,1); -webkit-box-shadow:2px 2px 4px rgba(0,0,0,0.5); border-top:1px solid #0051a0;z-index:6;}
+#nine{top:11.8%;left:10%;z-index:5;}
+#text{top:17%;left:27%;z-index:4;}
+.sun{top:13%;left:37%;z-index:3;}
+.sun img{width:32px;height:35px;}
+/*******************
+*    动画
+******************/
+.animate1{-webkit-animation:shake 1s linear normal;}
+@-webkit-keyframes shake{
+	0%{top:11%;left:13%;opacity:0;}
+	20%{top:10.2%}
+	50%{top:10.8%;left:26%;opacity:1;}
+	70%{top:11.8%;}
+	100%{top:13%;left:37%;}
+	
+}
+
+.animate2{-webkit-animation:shake2 5s linear infinite normal;-webkit-transform:rotate(360deg);}
+@-webkit-keyframes shake2{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+
+.nshake{-webkit-animation:shake3 1s ease-in infinite;}
+@-webkit-keyframes shake3{
+	0%{-webkit-transform:rotate(0deg);}
+	25%{-webkit-transform:rotate(20deg);}
+	50%{-webkit-transform:rotate(0deg);}
+	75%{-webkit-transform:rotate(-20deg);}
+	100%{-webkit-transform:rotate(0deg);}
+}
+
+.animate3{-webkit-animation:shake4 1s ease-in infinite;}
+@-webkit-keyframes shake4{
+	0%{-webkit-transform:rotate(0deg);}
+	25%{-webkit-transform:rotate(2deg);}
+	50%{-webkit-transform:rotate(0deg);}
+	75%{-webkit-transform:rotate(-2deg);}
+	100%{-webkit-transform:rotate(0deg);}
+}
+
+#listcon:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;
+	left:12%;
+   width:0px;
+  height:0px;
+  border-top:10px solid  #0051a0;
+  border-left:10px solid #0fc1f0;
+  border-right:10px solid #0fc1f0; 
+}
+#listcon li a{font-size:16px; font-weight:bold;margin-top:8px; text-align:center;display:inline-block;width:144px;height:43px;line-height:43px; text-shadow:1px 1px 2px rgba(0,0,0,0.8);}
+#listcon li:first-child a{ background:url(../images/nav1.png) no-repeat; background-size:contain;}
+#listcon li:nth-child(2) a{ background:url(../images/nav2.png) no-repeat; background-size:contain;}
+#listcon li:nth-child(3) a{ background:url(../images/nav3.png) no-repeat; background-size:contain;}
+#listcon li:nth-child(4) a{ background:url(../images/nav4.png) no-repeat; background-size:contain;}
+#listcon li:last-child a{ background:url(../images/nav5.png) no-repeat; background-size:contain;}
+#listcon a img{width:144px;height:43px;}
+.content{ position:absolute;top:28.5%;left:0;z-index:1;width:100%}
+
+
+.teanav{ text-align:right;padding-right:10px;font-size:0;height:50px; position:relative;}
+.teanav ul{ position:absolute;right:4%;bottom:0;}
+.teanav li{float:left; position:relative;}
+
+.teanav li a{display:inline-block;}
+.nav1 a.active,.nav2 a.active{width:112px;height:50px;margin:0px;}
+.nav1 a.active{ background:url(../images/nav9-on.png) no-repeat 0; background-size:contain;}
+.nav2 a.active{ background:url(../images/nav12-on.png) no-repeat 0; background-size:contain;}
+.nav1{right:-15px;}
+.y9,.y12{width:92px;height:50px;}
+.y9{ background:url(../images/nav9.png) no-repeat 0 9px; background-size:contain;margin-bottom:-8px;}
+.y12{ background:url(../images/nav12.png) no-repeat 0 9px; background-size:contain;margin-bottom:-8px;}
+.intro,.tip{margin:0 2%;}
+.intro figure{font-size:0;}
+.tip{padding:10px 2% 30px;}
+.intro{ background:-webkit-gradient(linear,0 0,100% 0,from(#b4e4fb),to(#2ac4f4));}
+.intro h3{line-height:30px;padding-left:10px;}
+.tip{font-size:11px;}
+
+.change{font-size:0;z-index:5;}
+.change,.download-app{width:17.3%;height:9.7%; position:absolute;top:0;left:0;z-index:5;}
+.hnav a{position:absolute;top:0;width:16.4%;height:6%;}
+.hnav .change > a{display:inline-block;width:100%;}
+.download-app{z-index:4;}
+#bookmark{width:222px;height:82px; background:url(../images/bookmark.png) no-repeat; background-size:contain; position:fixed; bottom:0;left:50%;margin-left:-104px;z-index:10;}

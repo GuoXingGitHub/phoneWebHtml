@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+<title>Last Minute</title>
+<link rel="stylesheet" href="templates/client/kaiyuanmobile/css/mobileyes.css">
+
+<script type="text/javascript" src="templates/client/kaiyuanmobile/js/all.js"></script>
+<script type="text/javascript">
+var sysTime='1397010285',sphone='',sname='';
+window.init = function(){
+	Taxi.index.init();
+};
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</head>
+<body>
+		<div id="ky_page">
+			<div class="v-page" id="main-page">
+				<div class="ky_head">
+					<a class="back_home"  onclick="window.history.back()" href="javascript:">
+						<i></i>
+					</a>
+					<h1> Last Minute </h1>
+					<div class="logo"></div>
+				</div>
+				<div class="ky_pa10 clearfix">
+					<div class="ky_wd300 ky_macenter">
+						
+						<div class="ky_imgbox ky_mt10  clearfix ">
+							<a href="pro_1012.html">
+							<img src="uploads/1305/image/1305031233306080.jpg"  class="img ky_wd300"/>
+							<section class="text_layer clearfix">
+								<h2 class="ky_font16 ky_font_bold ky_tal ky_white ky_lasttime" data_time="81563">
+								</h2>
+								<span class="ky_fl ky_greyer ">SF130414报名结束倒计时</span>
+							</section>
+							</a>
+						</div>
+						<div class="ky_mt5  ky_pb10 clearfix">
+							<p class="ky_font16 ky_plr10">湖光山色瑞士四天精选 (13.04-16.04) </p>
+							<p class="ky_greyer ky_plr10">优惠价：<span class="k_price">€ 253 </span> 最后<span class="k_price" > 3 </span>个名额 </p>
+							<div class="book_new ky_mt5 ">
+								<form action="" method="post">
+									<input type="hidden" name="tid" value="9090" />
+									<input type="submit" class="forinput"  value=" 检测剩余座位及预订"/> 
+								</form>
+							</div>
+						</div>
+										</div>
+				</div>
+<script language="JavaScript">
+
+
+$(function(){
+	window.setInterval(function(){getlasttime()},1000);
+	function getlasttime()  
+	{   
+		$('.ky_lasttime').each(function(){
+			var oldtime 	= $(this).attr('data_time');
+			time			= parseInt(oldtime);
+			var html 		= '';
+			days 			= Math.floor( time / ( 60*60*24));
+			if(days){
+				var time 	= time - days*(60*60*24);
+				html		+= days+'天 ';
+			}
+			var hours		= Math.floor(time / (60*60));
+			if(hours){
+				var time 	= time - hours*(60*60);
+				html		+= hours+'时 ';
+			}
+			var minites		= Math.floor(time / 60);
+			if(minites){
+				var time 	= time - minites*60;
+				html 		+= minites+'分 ';
+			}
+			if(time >= 0 ){
+				html += time+'秒 ';
+			}else{
+				html += '已结束';
+			}
+			$(this).text(html);
+			$(this).attr('data_time',(oldtime-1));
+		});
+	}
+})
+
+</script>
+				<div class="ky_footer">
+					<ul id="kyFooterIcons" class="main_nav">
+						<li class="flight">
+							<a href="@go=seeticket">
+								<div class="icon "></div>
+								<span class="title">机票</span>
+							</a>
+						</li>
+						<li class="travel">
+							<a href="@go=allpro">
+								<div class="icon "></div>
+								<span class="title">度假</span>
+							</a>
+						</li>
+						<li class="dhl">
+							<a href="art_3449.html">
+								<div class="icon "></div>
+								<span class="title">DHL</span>
+							</a>
+						</li>
+						<li class="qz">
+							<a href="art_3448.html">
+								<div class="icon "></div>
+								<span class="title">签证</span>
+							</a>
+						</li>
+					</ul>
+					<ul id="kyFooter" class="footer_nav clearfix">
+						<li>
+							<a id="memberlogin" mid="0" href="view_logging.html">登录</a>
+		<script language="JavaScript">
+			$(document).ready(function(){
+				//if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("退出").attr("href", "@go=logging&do=logout");
+				if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("线路推广").attr("href", "ajax.php@propro=1");
+			});
+		</script>
+						</li>
+												<li>
+							<a href="@go=usercenter" id="usercenter">我的订单</a>
+						</li>
+												<li>
+							<a href="art_3015.html">关于我们</a>
+						</li>
+												<li>
+							<a href="art_3013.html">联系方式</a>
+						</li>
+											</ul>
+					<ul class="mobile_pc clearfix">
+						<li class="active">
+							<a href="default.htm">触屏版</a>
+						</li>
+						<li >
+							<a href="../www.kaiyuan.eu/@no_mobile=1">电脑版</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						<span><a href="javascript:viewProfile();">开元网</a> 京ICP备11045617</span>
+						<a class="qn_ml25" href="mailto:service@kaiyuan.de">意见反馈</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--ipt type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2330297-1']);
+  _gaq.push(['_setDomainName', 'kaiyuan.eu']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</scri-->
+	</body>
+</html>

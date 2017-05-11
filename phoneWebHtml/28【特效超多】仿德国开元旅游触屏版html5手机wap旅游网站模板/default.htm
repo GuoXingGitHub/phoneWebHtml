@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+
+<link rel="stylesheet" href="templates/client/kaiyuanmobile/css/style.css">
+<link rel="stylesheet" href="templates/client/kaiyuanmobile/css/mobile.css">
+<script type="text/javascript" src="templates/client/kaiyuanmobile/js/all.js"></script>
+<title>仿德国开元旅游触屏版html5手机wap旅游网站模板</title>
+</head>
+<body>
+
+	<div class="ky_main">
+		<div class="ky_download">
+			<div class="logo"></div>
+			<div class="title">
+				<p class="ky_font14">德国开元旅游</p>
+				<p class="ky_grey ky_mt5">机票,旅游,签证,DHL...</p>
+			</div>
+		</div>
+		<div class="ky_main">
+			<div class="ky_slide"></div>
+			<div class="ky_carousel">
+				<div class="carousel">
+					<ul style="margin-left:10px">
+						<li>
+							<a href="go=seeticket.html">
+								<div class="icon flight"></div>
+								<p>机票</p>
+							</a>
+						</li>
+						<li>
+							<a href="go=allpro.html">
+								<div class="icon hotel"></div>
+								<p>旅游</p>
+							</a>
+						</li>
+						<li>
+							<a href="go=alltickt.html">
+								<div class="icon dhl"></div>
+								<p>优惠</p>
+							</a>
+						</li>
+						<li>
+							<a href="art_3448.html">
+								<div class="icon qz"></div>
+								<p>签证</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ky_center ky_mt10 ky_mb5">
+					
+				</div>
+			</div>
+		</div>
+		<div class="ky_footer">
+			<div class="ad"></div>
+			<ul class="footer_nav clearfix">
+					<li><a id="memberlogin" mid="0" href="view_logging.html">登录</a>
+		<script language="JavaScript">
+			$(document).ready(function(){
+				//if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("退出").attr("href", "@go=logging&do=logout");
+				if(document.cookie.indexOf("memberid") != -1) $("#memberlogin").text("线路推广").attr("href", "ajax.php@propro=1");
+			});
+		</script></li> 
+												<li>
+							<a href="@go=usercenter" id="usercenter">我的订单</a>
+						</li>
+												<li>
+							<a href="art_3015.html">关于我们</a>
+						</li>
+												<li>
+							<a href="art_3013.html">联系方式</a>
+						</li>
+									</ul>
+			<ul class="mobile_pc clearfix">
+					<li class="active"><a href="default.htm">触屏版</a></li>
+					<li ><a href="../www.kaiyuan.eu/@no_mobile=1">电脑版</a></li>
+			</ul>
+			<div class="copyright">
+				<span>京ICP备11045617号 </span>
+				<a class="ky_ml25" href="mailto:service@kaiyuan.de">意见反馈</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="templates/client/kaiyuanmobile/js/lubo.js"></script>
+<script>
+window.init = function(){
+	Taxi.index.init();
+};
+;(function($){
+   //轮播图
+   $('.ky_slide').slider({
+   		data : [{"src":"uploads/1403/image/1403211003393742.jpg","url":"view_lastminute.html"},{"src":"uploads/1402/image/1402230651287743.jpg","url":"@go=list&keyword=_25E8_25B5_258F_25E8_258A_25B1"},]
+   });
+})(Zepto);
+</script>
+  </body>
+</html>

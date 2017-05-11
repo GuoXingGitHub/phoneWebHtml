@@ -1,0 +1,19 @@
+.sharecon{width:96.5%;margin:0 auto; position:relative;top:0;left:0;font-size:0;}
+
+#ctop{margin-bottom:-8%;}
+
+
+/********分享*******/
+#ctop .share-mod{padding:10px 6px 0; position:absolute;bottom:10%;}
+.s-text,.s-butt{position:absolute;z-index:1;}
+.s-text{width:230px;height:42.5%;padding:3px 25px 2px 30px;overflow:hidden;top:17%;left:50%;margin-left:-144px; border-radius:5px; background:#fff;}
+.s-text .prev,.s-text .next{display:inline-block;width:25px;height:100%; position:absolute;top:0; }
+.s-text .prev{left:0; border-top-left-radius:5px; background:#fbfc72 url(../images/prev.jpg) no-repeat 7px 50%; border-bottom-left-radius:5px;}
+.s-text .next{right:0; border-top-right-radius:5px; background:#fbfc72 url(../images/next.jpg) no-repeat 7px 50%; border-bottom-right-radius:5px;}
+.s-text a.canslide{background:#fbfc72;}
+
+.s-alide{width:100%;height:100%; position:relative;}
+.s-alide ul{width:920px;}
+.s-alide li{float:left;width:230px;font-size:11px;line-height:18px;-webkit-text-size-adjust:none;color:#8a1e00;}
+.s-butt{width:75.8%;height:21.8%;bottom:7%;left:13%;}
+.share{display:inline-block;width:32%;height:100%;  text-indent:-9999px;}

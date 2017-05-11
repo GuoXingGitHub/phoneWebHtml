@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    	<title>仿KFC肯德基3G触屏版手机wap购物订餐网站模板</title>
+        <link rel="stylesheet" type="text/css" href="common/reset.css">
+        <link rel="stylesheet" type="text/css" href="common/index.css">
+		<script src="channel.js"></script>
+        <script src="common/jquery-1.4.4.min.js"></script>
+		<script src="common/jquery.cookie.js"></script>
+        <script src="common/trackEvent.js"></script>
+        <script src="common/iscroll.js"></script>
+		<script src="common/citys.js"></script>
+		<script type="text/javascript" src="../api.map.baidu.com/api@v=1.4"></script>
+        <script>
+		var _i1,_i2,_ci1=1,_ci2=1;
+		$(document).ready(function(e) {
+			track(channel, 4332);
+			/*
+			var liLength = $('#banner_small li'),firstLi='',lastLi='';
+			for(var i=0;i<liLength.length;i++){
+				if(i==0){
+					firstLi = liLength.eq(i).clone();
+				}else if(i==liLength.length-1){
+					lastLi = liLength.eq(i).clone();
+				}
+			}
+			$('#banner_small ul').prepend(lastLi);
+			$('#banner_small ul').append(firstLi);
+			
+			var liLength1 = $('#banner_adtext li'),firstLi='',lastLi='';
+			for(var i=0;i<liLength1.length;i++){
+				if(i==0){
+					firstLi = liLength1.eq(i).clone();
+				}else if(i==liLength1.length-1){
+					lastLi = liLength1.eq(i).clone();
+				}
+			}
+			$('#banner_adtext ul').prepend(lastLi);
+			$('#banner_adtext ul').append(firstLi);
+			
+			
+				
+			_i1 = new iScroll('banner_small',{hScrollbar:false,snap : true,
+			onScrollEnd: function () {
+				
+				var i = this.currPageX;
+				if(i == 0){
+					i=1;
+				}else if(i == 3){
+					i=0;
+				}else{
+					i-=1;
+				}
+				$(".dians .dian").removeClass("selected");
+				$(".dian[item-select="+i+"]").addClass("selected");
+				if(this.currPageX ==0){
+					_i1.scrollToPage(2,0,0);
+				}
+				else if(this.currPageX ==3){
+					_i1.scrollToPage(1,0,0);
+				}
+			}});
+			
+			
+			_i2 = new iScroll('banner_adtext',{vScrollbar:false,snap : true,
+			onScrollEnd: function () {
+				
+				if(this.currPageY ==0){
+					_i2.scrollToPage(0,2,0);
+				}
+				else if(this.currPageY ==3){
+					_i2.scrollToPage(0,1,0);
+				}
+			}});
+			//_i2.refresh();
+			_i1.scrollToPage(1,0,0);
+			_i2.scrollToPage(0,1,0);
+			setInterval(function(){
+				return;
+				_ci1++;
+				_ci2++;
+				
+				_i2.scrollToPage(0,_ci2,400);
+				
+				_i1.scrollToPage(_ci1,0,800);
+				
+				if(_ci1 == 3){
+					_ci1 = 1;
+				}
+				if(_ci2 == 3){
+					_ci2 = 1;
+				}
+			},3000);
+			*/
+			if(!$.cookie("cityname")){
+				new BMap.LocalCity().get(function(city){
+					setCity(city.name);
+					$("#location").text(getCityName());
+				});
+			}else{
+				$("#location").text(getCityName());
+			}
+			
+			if(isIos()){
+				//ios下载
+				document.querySelector('#c1_2_1').onclick = function(){
+					track(channel,4334,'../https@itunes.apple.com/cn/app/ken-de-ji/id587238847@mt=8');
+				};
+				document.querySelector('#c1_2_2').onclick = function(){
+					track(channel,4462,'https_3A//itunes.apple.com/cn/app/ken-ji-zhai-ji-song-guan-fang/id655012687@ls=1&mt=8');
+				};
+			}else{
+				document.querySelector('#c1_2_1').onclick = function(){
+					track(channel,4333,'../download.mobile1.com.cn/KFC.apk');
+				};
+				document.querySelector('#c1_2_2').onclick = function(){
+					track(channel,4463,'../mos.4008823823.com.cn/download/kfcmos.apk');
+				};
+			}
+			
+		});
+		function isIos() {
+			var u = navigator.userAgent.toLowerCase();
+		
+			if (u.indexOf('iphone') > -1 || u.indexOf('ipod') > -1 ) {
+				return true;
+			}
+			return false;
+		}
+	function weixin(){
+		if($('#c1_box').css("display") != 'none'){
+			$('#c1_box').hide();
+		}else{
+			$('#c1_box').show();
+		}
+	}
+        </script>
+    </head>
+    
+    <body>
+    
+    	<div class="container">
+        	
+            <figure id="header">
+            	<img id="logo" src="common/logo.png" alt="" />
+				<div id="location" onclick="location='list.html'">正在定位</div>
+            </figure>
+            
+			<figure>
+            	<img id="c1_1" src="common/c1_1.png" alt="" />
+				<img id="c1_1-3" src="common/c1_1_3.png" alt="" class="fly" />
+				<img id="c1_1-4" src="common/c1_1_4.png" alt="" class="fly" />
+				<a id="c1_1_1" href="m.4008823823.com.cn/kfcmwos/index.htm@utm_source=kfcbrandsite" class="fly"></a>
+				<a id="c1_1_2" href="store" class="fly"></a>
+				<a id="c1_1_3" href="../m.weibo.cn/u/1687422352@" class="fly"></a>
+				<a id="c1_1_4" href="../wap.kfcyouhui.com/default.htm" class="fly"></a>
+				<a id="c1_1_5" href="javascript:weixin();" class="fly"></a>
+            </figure>
+			
+			<figure id="banner_small">
+            	<ul>
+					<li><a href="../kfcpk.qq.com/mobile/index.html"><img src="common/b3.jpg"/></a></li>
+                </ul>
+				<div class="dians">
+<!--
+					
+					<div class="dian selected" item-select="0"></div>
+					<div class="dian" item-select="1"></div>
+-->
+				</div>
+            </figure>
+			<figure id="banner_adtext">
+				<ul>
+                	
+					<li><a class="adtext" href="../kfcpk.qq.com/mobile/index.html">经典VS新潮，美味对决，速速来投票！</a></li>
+                </ul>
+            </figure>
+			<figure>
+            	<img id="c1_2" src="common/c1_2.png" alt="" />
+				<a id="c1_2_1" class="fly"></a>
+				<a id="c1_2_2" class="fly"></a>
+            </figure>
+            
+            
+			<figure>
+            	<img id="c1_4" src="common/c1_4.png" onclick="location='../www.kfc.com.cn/kfccda/index.aspx@from=mobile'" alt="" />
+            </figure>
+            
+			
+			<figure>
+            	<img id="c1_3" src="common/c1_3.png" alt="" />
+				<a id="c1_3_1" href="breakfast/index.html" class="fly"></a>
+				<a id="c1_3_2" href="lunch/index.html" class="fly"></a>
+				<a id="c1_3_3" href="teatime/index.html" class="fly"></a>
+				<a id="c1_3_4" href="dinner/index.html" class="fly"></a>
+				<a id="c1_3_5" href="24h/index.html" class="fly"></a>
+            </figure>
+			
+			<div id="c1_box" class="fly">
+				<img src="common/s_box.png"/>
+				<label id="weixinhao" class="fly">微信号：<input type="text" value="肯德基" readonly /></label>
+				<label id="weixintext" class="fly">请查找公众号“肯德基”, 关注肯德基官方微信。</label>
+			</div>
+        </div>
+	
+    </body>
+
+</html>
+<!-- kfc1.2 by hezhanglin -->

@@ -1,0 +1,396 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+	<title>购物客单页淘宝客触屏版手机wap购物网站模板-pppf.taobao.com整理搜集仅用于学习</title>
+	
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>购物客</title>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+	<link href="css/gwk_touch.css" rel="stylesheet" type="text/css" />
+	<script src="js/huaping.js" type="text/javascript"language="javascript"></script>
+	
+	<script type="text/javascript">
+	
+	var euid = getQueryString("e"); 
+	
+	function clickLogMn(pid, mid, href, kw, type, content) {
+		if (typeof (pid) == "undefined") {
+			pid = '-1';
+		}
+		if (typeof (mid) == "undefined") {
+			mid = '-1';
+		}
+		if (typeof (type) == "undefined") {
+			type = 'undefined';
+		}
+		kw = encodeURIComponent(kw);
+		content = encodeURIComponent(content);
+		var gt = pid + '_' + mid + '_' + type + '_' + kw + '_' + content + '_'+ '' + '_' + 'gwk106';
+		document.getElementById("clickLog").src = '../../www.gouwuke.com/gwkClickMonitor.do@gt=' + gt;
+		var _euid = escape(euid);
+		var gwkTag = pid + '}_{' + mid + '}_{' + type + '}_{' + kw + '}_{' + _euid;
+		window.open('../../www.gouwuke.com/gwkTagMonitor.do@gt=' + gwkTag+ '&href=' + href);
+		return false;
+	}
+		
+	/*
+	 * 获取参数
+	 */
+	function getQueryString(name){
+		// 如果链接没有参数，或者链接中不存在我们要获取的参数，直接返回空
+		if(location.href.indexOf("?")==-1 || location.href.indexOf(name+'=')==-1){
+			return '';
+		}
+		
+		// 获取链接中参数部分
+		var queryString = location.href.substring(location.href.indexOf("?")+1);
+		 
+		// 分离参数对 ?key=value&key2=value2
+		var parameters = queryString.split("&");
+		 
+		var pos, paraName, paraValue;
+		for(var i=0; i<parameters.length; i++){
+		// 获取等号位置
+		
+		pos = parameters[i].indexOf('=');
+		if(pos == -1) { 
+			continue; 
+			}
+		// 获取name 和 value
+		paraName = parameters[i].substring(0, pos);
+		paraValue = parameters[i].substring(pos + 1);
+		
+		// 如果查询的name等于当前name，就返回当前值，同时，将链接中的+号还原成空格
+		
+		if(paraName == name){
+			return unescape(paraValue.replace(/\+/g, " "));
+			}
+		}
+		return '';
+	}
+	
+	/*
+	 * 检查输入关键词
+	 */
+	function checkKeyWord(){
+		var keyword = $("#KeyWord").val();
+		if(keyword==null||keyword=="中国购物搜索导航第一站"||keyword==""){
+		    return false;
+		}
+		return true;
+	}
+	</script>
+	<img height="0" width="0" id="clickLog" border="0" name="clickLog"/>
+	</head>
+	
+	<body>
+	<!--定义顶部锚点-->
+	<a name="top"></a>
+	<div id="content">
+		<header>
+		<div class="top">
+			<img alt="购物客" src="images/logo.gif" />
+		</div>
+		<div id="search">
+		<form name="form" method="post" action="/wap/search.do?type=null&e=null" onSubmit="return checkKeyWord(this)"> 
+			<input name="KeyWord" type="text" id="KeyWord" class="txt" style="color: #999; width: 220px;"value="中国购物搜索导航第一站"onfocus="if(value=='中国购物搜索导航第一站') {value='';}this.style.color='#333';"onblur="if (value=='') {value='中国购物搜索导航第一站';this.style.color='#999';}" />
+			<input type="submit"  class="btn"  name="submit" value=""> 
+		</form>
+		</div>
+		</header>
+		<div class="scroll">
+			<div class="slide_01" id="slide_01">
+				<div>
+					<div>
+						
+							<div class="mod_01">
+								<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=6&c=6433&v=45415&i=18903&t=http_3A_2F_2Fm.paixie.net','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/waplunbo/24/12/52/1394691966006.jpg"alt="拍鞋网移动CPS"> </a>
+							</div>
+						
+							<div class="mod_01">
+								<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=5&c=6559&v=696&i=21842&t=http_3A_2F_2Fm.mbaobao.com_2Fa-dudu1990228.html ','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/waplunbo/24/45/51/1394698452747.jpg"alt="麦包包移动CPS"> </a>
+							</div>
+						
+							<div class="mod_01">
+								<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=45&c=17466&v=121252&i=40349&t=http_3A_2F_2Fm.meijing.com_2Ftemai.html ','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/waplunbo/24/58/6/1394618943291.jpg"alt="美睛网移动CPS"> </a>
+							</div>
+						
+							<div class="mod_01">
+								<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=4&c=6953&v=82329&i=25802&t=http_3A_2F_2Fm.yougou.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/waplunbo/24/7/7/1394011638016.jpg"alt="优购移动CPS"> </a>
+							</div>
+						
+							<div class="mod_01">
+								<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=20&c=6470&v=26008&i=19982&t=http_3A_2F_2Fm.s.cn','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/waplunbo/24/26/58/1394693348899.jpg"alt="名鞋库移动CPS"> </a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="dotModule_new">
+				<div id="slide_01_dot"></div>
+			</div>
+		</div>
+	<script type="text/javascript">
+	if (document.getElementById("slide_01")) {
+		var slide_01 = new ScrollPic();
+		slide_01.scrollContId = "slide_01"; //内容容器ID
+		slide_01.dotListId = "slide_01_dot";//点列表ID
+		slide_01.dotOnClassName = "selected";
+		slide_01.arrLeftId = "sl_left"; //左箭头ID
+		slide_01.arrRightId = "sl_right";//右箭头ID
+		slide_01.frameWidth = 320;
+		slide_01.pageWidth = 320;
+		slide_01.upright = false;
+		slide_01.speed = 5;
+		slide_01.space = 30;
+		slide_01.initialize(); //初始化
+	}
+	</script>
+		<div class="row_con">
+			<h2>
+				<a href="business.do@type=null&e=null">更多</a>热门商家
+			</h2>
+			<div class="commend">
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=37&c=17301&v=710&i=39119&t=http_3A_2F_2Fm.ctrip.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/10/54/1386746063554.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=38&c=6497&v=94100&i=22842&t=http_3A_2F_2Fwap.wozhongla.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/34/2/1386746133910.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=8&c=6487&v=627&i=19562&t=http_3A_2F_2Fm.dangdang.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/39/57/1372324948345.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=26&c=254&v=647&i=160&t=http_3A_2F_2Fwww.jd.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/58/6/1372642789603.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=16&c=6536&v=94607&i=21822&t=http_3A_2F_2Fm.dianping.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/39/57/1372330198255.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=11&c=6548&v=708&i=20482&t=http_3A_2F_2Fm.moonbasa.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/6/6/1372325190492.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=44&c=17234&v=4402&i=38610&t=http_3A_2F_2Fm.masamaso.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/28/4/1389607199360.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=18&c=6939&v=21758&i=25424&t=http_3A_2F_2Fm.vipshop.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/38/6/1372330499610.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=13&c=6470&v=26008&i=19982&t=http_3A_2F_2Fwww.s.cn','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/11/53/1384845127587.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=43&c=6822&v=57313&i=23483&t=http_3A_2F_2Fm.aimer.com.cn','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/33/1/1389607081239.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=14&c=6519&v=59484&i=19862&t=http_3A_2F_2Fm.jiuxian.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/61/3/1372325964977.jpg"alt=""> </a>
+				
+					<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=25&c=7025&v=74021&i=26503&t=http_3A_2F_2Fm.meituan.com','','mobilewap','')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapmall/24/50/14/1372337532484.jpg"alt=""> </a>
+				
+			</div>
+		</div>
+		<div class="row_con">
+			<h2>热销单品</h2>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=40&c=6953&v=82329&i=25802&t=http_3A_2F_2Fm.yougou.com_2Findex.php_2Fgoods_2Fgoodsdetail_2Fproductid_2F99942116_2Factiveid_2F9e469f61865d4fa5a671d1b528eef2fe','','mobilewap','新百伦新款中性复古鞋')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/44/12/1394011605310.jpg"	alt="新百伦新款中性复古鞋" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=40&c=6953&v=82329&i=25802&t=http_3A_2F_2Fm.yougou.com_2Findex.php_2Fgoods_2Fgoodsdetail_2Fproductid_2F99942116_2Factiveid_2F9e469f61865d4fa5a671d1b528eef2fe','','mobilewap','新百伦新款中性复古鞋')"  > 新百伦新款中性复古鞋</a>
+						</p>
+						<span>¥593.00 </span>
+						<del>659.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=40&c=6953&v=82329&i=25802&t=http_3A_2F_2Fm.yougou.com_2Findex.php_2Fgoods_2Fgoodsdetail_2Fproductid_2F99942116_2Factiveid_2F9e469f61865d4fa5a671d1b528eef2fe','','mobilewap','新百伦新款中性复古鞋')"href="javascript:void(0)">优购网</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=40&c=6953&v=82329&i=25802&t=http_3A_2F_2Fm.yougou.com_2Findex.php_2Fgoods_2Fgoodsdetail_2Fproductid_2F99942116_2Factiveid_2F9e469f61865d4fa5a671d1b528eef2fe','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=21&c=17466&v=121252&i=40349&t=http_3A_2F_2Fm.meijing.com_2Fyxgoods-108.html ','','mobilewap','海昌星眸玛瑙黑半年抛美瞳彩色隐形眼镜')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/24/56/1394010992372.jpg"	alt="海昌星眸玛瑙黑半年抛美瞳彩色隐形眼镜" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=21&c=17466&v=121252&i=40349&t=http_3A_2F_2Fm.meijing.com_2Fyxgoods-108.html ','','mobilewap','海昌星眸玛瑙黑半年抛美瞳彩色隐形眼镜')"  > 海昌星眸玛瑙黑半年抛美瞳彩色隐形眼镜</a>
+						</p>
+						<span>¥36.00 </span>
+						<del>36.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=21&c=17466&v=121252&i=40349&t=http_3A_2F_2Fm.meijing.com_2Fyxgoods-108.html ','','mobilewap','海昌星眸玛瑙黑半年抛美瞳彩色隐形眼镜')"href="javascript:void(0)">美睛网</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=21&c=17466&v=121252&i=40349&t=http_3A_2F_2Fm.meijing.com_2Fyxgoods-108.html ','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=22&c=6470&v=26008&i=19982&t=http_3A_2F_2Fm.s.cn_2Ftouch-nike-579957-015.html','','mobilewap','菲诗小铺金盏花调理乳液')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/39/57/1394011442866.jpg"	alt="菲诗小铺金盏花调理乳液" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=22&c=6470&v=26008&i=19982&t=http_3A_2F_2Fm.s.cn_2Ftouch-nike-579957-015.html','','mobilewap','菲诗小铺金盏花调理乳液')"  > 菲诗小铺金盏花调理乳液</a>
+						</p>
+						<span>¥329.00 </span>
+						<del>429.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=22&c=6470&v=26008&i=19982&t=http_3A_2F_2Fm.s.cn_2Ftouch-nike-579957-015.html','','mobilewap','菲诗小铺金盏花调理乳液')"href="javascript:void(0)">知我药妆</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=22&c=6470&v=26008&i=19982&t=http_3A_2F_2Fm.s.cn_2Ftouch-nike-579957-015.html','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=23&c=17398&v=76707&i=39666&t=http_3A_2F_2Fm.zhiwo.com_2Fgroupon_2Fview@goods_id=4668&type_id=0&sort=popular_desc','','mobilewap','兰芝锁水滋养睡眠面膜')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/10/54/1389690574651.jpg"	alt="兰芝锁水滋养睡眠面膜" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=23&c=17398&v=76707&i=39666&t=http_3A_2F_2Fm.zhiwo.com_2Fgroupon_2Fview@goods_id=4668&type_id=0&sort=popular_desc','','mobilewap','兰芝锁水滋养睡眠面膜')"  > 兰芝锁水滋养睡眠面膜</a>
+						</p>
+						<span>¥129.00 </span>
+						<del>230.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=23&c=17398&v=76707&i=39666&t=http_3A_2F_2Fm.zhiwo.com_2Fgroupon_2Fview@goods_id=4668&type_id=0&sort=popular_desc','','mobilewap','兰芝锁水滋养睡眠面膜')"href="javascript:void(0)">知我药妆</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=23&c=17398&v=76707&i=39666&t=http_3A_2F_2Fm.zhiwo.com_2Fgroupon_2Fview@goods_id=4668&type_id=0&sort=popular_desc','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=31&c=6559&v=696&i=21842&t=http_3A_2F_2Fm.mbaobao.com_2Fitem_2F1410010501.html','','mobilewap','ANDY系列手提斜挎包')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/37/59/1391762845531.jpg"	alt="ANDY系列手提斜挎包" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=31&c=6559&v=696&i=21842&t=http_3A_2F_2Fm.mbaobao.com_2Fitem_2F1410010501.html','','mobilewap','ANDY系列手提斜挎包')"  > ANDY系列手提斜挎包</a>
+						</p>
+						<span>¥178.00 </span>
+						<del>178.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=31&c=6559&v=696&i=21842&t=http_3A_2F_2Fm.mbaobao.com_2Fitem_2F1410010501.html','','mobilewap','ANDY系列手提斜挎包')"href="javascript:void(0)">麦包包</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=31&c=6559&v=696&i=21842&t=http_3A_2F_2Fm.mbaobao.com_2Fitem_2F1410010501.html','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=30&c=6596&v=46805&i=21422&t=http_3A_2F_2Fm.vjia.com_2Fproduct_2Fdetail_2F463286_2F3974429_2F0_2F@guid=f7023bc55f5c4b038d3c78d1ddb827da','','mobilewap','韩都衣舍 韩国2014春装新款韩版女装翻领长袖连衣裙JQ3072 黑色')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/31/1/1394160990803.jpg"	alt="韩都衣舍 韩国2014春装新款韩版女装翻领长袖连衣裙JQ3072 黑色" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=30&c=6596&v=46805&i=21422&t=http_3A_2F_2Fm.vjia.com_2Fproduct_2Fdetail_2F463286_2F3974429_2F0_2F@guid=f7023bc55f5c4b038d3c78d1ddb827da','','mobilewap','韩都衣舍 韩国2014春装新款韩版女装翻领长袖连衣裙JQ3072 黑色')"  >韩都衣舍 韩国2014春装新款韩版女装翻领长袖连衣...</a>
+						</p>
+						<span>¥139.00 </span>
+						<del>468.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=30&c=6596&v=46805&i=21422&t=http_3A_2F_2Fm.vjia.com_2Fproduct_2Fdetail_2F463286_2F3974429_2F0_2F@guid=f7023bc55f5c4b038d3c78d1ddb827da','','mobilewap','韩都衣舍 韩国2014春装新款韩版女装翻领长袖连衣裙JQ3072 黑色')"href="javascript:void(0)">vjia</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=30&c=6596&v=46805&i=21422&t=http_3A_2F_2Fm.vjia.com_2Fproduct_2Fdetail_2F463286_2F3974429_2F0_2F@guid=f7023bc55f5c4b038d3c78d1ddb827da','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=29&c=17546&v=113225&i=41537&t=http_3A_2F_2Fm.wbiao.cn_2Fdavosa-g28206.html ','','mobilewap','瑞士迪沃斯男士石英表')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/11/11/1394012361111.jpg"	alt="瑞士迪沃斯男士石英表" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=29&c=17546&v=113225&i=41537&t=http_3A_2F_2Fm.wbiao.cn_2Fdavosa-g28206.html ','','mobilewap','瑞士迪沃斯男士石英表')"  > 瑞士迪沃斯男士石英表</a>
+						</p>
+						<span>¥3200.00 </span>
+						<del>3200.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=29&c=17546&v=113225&i=41537&t=http_3A_2F_2Fm.wbiao.cn_2Fdavosa-g28206.html ','','mobilewap','瑞士迪沃斯男士石英表')"href="javascript:void(0)">玛萨玛索</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=29&c=17546&v=113225&i=41537&t=http_3A_2F_2Fm.wbiao.cn_2Fdavosa-g28206.html ','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=28&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-xtep-986119119587-582335.html','','mobilewap','特步 男跑步鞋')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/14/50/1392102352013.jpg"	alt="特步 男跑步鞋" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=28&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-xtep-986119119587-582335.html','','mobilewap','特步 男跑步鞋')"  > 特步 男跑步鞋</a>
+						</p>
+						<span>¥159.00 </span>
+						<del>279.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=28&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-xtep-986119119587-582335.html','','mobilewap','特步 男跑步鞋')"href="javascript:void(0)">拍鞋网</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=28&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-xtep-986119119587-582335.html','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=27&c=6686&v=34413&i=22507&t=http_3A_2F_2F3g.happigo.com_2Fspdy.php@hid=162036 ','','mobilewap','韩束新水漾活泉四件套')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/50/50/1392103976395.jpg"	alt="韩束新水漾活泉四件套" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=27&c=6686&v=34413&i=22507&t=http_3A_2F_2F3g.happigo.com_2Fspdy.php@hid=162036 ','','mobilewap','韩束新水漾活泉四件套')"  > 韩束新水漾活泉四件套</a>
+						</p>
+						<span>¥289.00 </span>
+						<del>299.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=27&c=6686&v=34413&i=22507&t=http_3A_2F_2F3g.happigo.com_2Fspdy.php@hid=162036 ','','mobilewap','韩束新水漾活泉四件套')"href="javascript:void(0)">快乐购</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=27&c=6686&v=34413&i=22507&t=http_3A_2F_2F3g.happigo.com_2Fspdy.php@hid=162036 ','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=24&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-li-ning-ABPH191-1-580728.html','','mobilewap','李宁 篮球场地鞋 男篮球鞋')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/31/63/1392102394007.jpg"	alt="李宁 篮球场地鞋 男篮球鞋" /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=24&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-li-ning-ABPH191-1-580728.html','','mobilewap','李宁 篮球场地鞋 男篮球鞋')"  > 李宁 篮球场地鞋 男篮球鞋</a>
+						</p>
+						<span>¥239.00 </span>
+						<del>359.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=24&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-li-ning-ABPH191-1-580728.html','','mobilewap','李宁 篮球场地鞋 男篮球鞋')"href="javascript:void(0)">拍鞋网</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=24&c=6433&v=45415&i=18903&t=http_3A_2F_2Fwap.paixie.net_2Fshoe-li-ning-ABPH191-1-580728.html','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+				<dl class="list">
+					<dt>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=39&c=17596&v=34855&i=41492&t=http_3A_2F_2Fm.tiantian.com_2Fproduct_2FproductInfo_2FA018309 ','','mobilewap','Avene雅漾舒护活泉水300ml ')"href="javascript:void(0)"><img src="http://image.gouwuke.com/images/wapgood/24/40/56/1394009709057.jpg"	alt="Avene雅漾舒护活泉水300ml " /> </a>
+					</dt>
+					<dd>
+						<p>		
+							<a  href="javascript:void(0)"  onclick="clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=39&c=17596&v=34855&i=41492&t=http_3A_2F_2Fm.tiantian.com_2Fproduct_2FproductInfo_2FA018309 ','','mobilewap','Avene雅漾舒护活泉水300ml ')"  > Avene雅漾舒护活泉水300ml </a>
+						</p>
+						<span>¥149.00 </span>
+						<del>350.00</del>
+						<br>
+						<b> <a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=39&c=17596&v=34855&i=41492&t=http_3A_2F_2Fm.tiantian.com_2Fproduct_2FproductInfo_2FA018309 ','','mobilewap','Avene雅漾舒护活泉水300ml ')"href="javascript:void(0)">天天网</a> </b>
+						<a onclick="return clickLogMn('','','../../g.yiqifa.com/gc@w=660306&u=534&e=39&c=17596&v=34855&i=41492&t=http_3A_2F_2Fm.tiantian.com_2Fproduct_2FproductInfo_2FA018309 ','','mobilewap','')"href="javascript:void(0)" class="btn"> 去购买</a>
+					</dd>
+				</dl>
+			
+		</div>
+		
+		<div class="go_top">
+			<a href="#top" class="top">返回顶部</a>
+		</div>
+		<footer>
+			
+ 
+	<a href="index.do@type=null">触屏版</a><a href="../../t351.gouwuke.com/@type=null_2F">电脑版</a>
+	<p class="copyright">© 2010 Gouwuke 京ICP备10001024号</p>
+		</footer>
+	</div>
+	</body>
+</html>
+	<script type="text/javascript">
+		var iframe = '';
+		var referer = document.referrer;
+		if(typeof(referer) == 'undefined')
+			referer = '';
+		if(window.top!=this){
+			iframe = 'iframe';
+		}
+		referer = encodeURIComponent(referer);
+		var url = '../../www.gouwuke.com/gwkImprMonitor.do@src=mobilewap&wid=660306&oid=534&referer='+referer+"&iframe="+iframe;
+		document.write('<image src = \"'+url+'\" height=\"0\" weight=\"0\"/>');
+	</script>

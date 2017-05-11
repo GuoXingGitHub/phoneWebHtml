@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>仿票啦啦触屏版电影手机wap娱乐网站模板影院</title>
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no;" >
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link href="../default/green/css/common-lib.css" rel="stylesheet" type="text/css" />
+<link href="../default/green/css/cinema.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../commons/js/zepto.min.js"></script>
+<script type="text/javascript" src="../default/js/js-common-lib.js"></script>
+<!--[if lt IE 9]> 
+<script src="../commons/js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<header id="hometop">
+<div class="top clearfix">
+    <div class="logo"><img src="../default/green/images/pll_logo.png" ></div>
+    <a href="javascript:piaolala.tab.show('J_city_changeArea','hometop')" class="user fw">
+        长沙<i class="sear-arrow"></i>
+  </a>
+</div>
+</header>
+
+<banner>
+	<div class="nav-list f16 fw">
+		<ul>
+			<a href="../index.html"><li >影片</li></a>
+			<a href="index.html"><li class="cur">影院</li></a>
+			<a href="../mycenter/index.html"><li >账户</li></a>
+		</ul>
+	</div>
+</banner>
+
+<article id="J_city_changeArea" class="hide">
+<div class="modebox clearfix">
+    <div class="hd">
+    <h6>选择城市</h6>
+    </div>
+    <div class="m5 clearfix">
+    <span class="fl">城市名首字母：</span>
+  </div>
+    <div class="m5 clearfix" id="chaCk">
+    <a id="ch0" class="mr14 bakfw" style="cursor: pointer;" onclick="piaolala.util.cityChang('0');">全部</a>
+    <a id="ch1" style="cursor: pointer;" onclick="piaolala.util.cityChang('1');" class="mr14">A-G</a>
+    <a id="ch2" style="cursor: pointer;" onclick="piaolala.util.cityChang('2');" class=" mr14">H-L</a>
+    <a id="ch3" style="cursor: pointer;" onclick="piaolala.util.cityChang('3');" class=" mr14">M-T</a>
+    <a id="ch4" style="cursor: pointer;" onclick="piaolala.util.cityChang('4');" class=" mr14">W-Z</a>
+    </div>
+    <div class="town_more clearfix">
+		    <ul id="A">
+			    <li class="pt5">A</li>
+			    <li>
+                <a href="index.do@citycode=2103"> 鞍山</a>    
+                <a href="index.do@citycode=5204"> 安顺</a>    
+                <a href="index.do@citycode=3408"> 安庆</a>    
+			    </li>
+			    </ul>
+		    <ul id="B">
+			    <li class="pt5">B</li>
+			    <li>
+                <a href="index.do@citycode=5224"> 毕节</a>    
+                <a href="index.do@citycode=1101"> 北京</a>    
+			    </li>
+			    </ul>
+		    <ul id="C">
+			    <li class="pt5">C</li>
+			    <li>
+                <a href="index.do@citycode=1309"> 沧州</a>    
+                <a href="index.do@citycode=4301"> 长沙</a>    
+                <a href="index.do@citycode=4307"> 常德</a>    
+                <a href="index.do@citycode=5101"> 成都</a>    
+                <a href="index.do@citycode=2201"> 长春</a>    
+                <a href="index.do@citycode=3204"> 常州</a>    
+                <a href="index.do@citycode=5001"> 重庆</a>    
+                <a href="index.do@citycode=4310"> 郴州</a>    
+			    </li>
+			    </ul>
+		    <ul id="D">
+			    <li class="pt5">D</li>
+			    <li>
+                <a href="index.do@citycode=4419"> 东莞</a>    
+                <a href="index.do@citycode=3705"> 东营</a>    
+                <a href="index.do@citycode=5106"> 德阳</a>    
+                <a href="index.do@citycode=3714"> 德州</a>    
+                <a href="index.do@citycode=2102"> 大连</a>    
+                <a href="index.do@citycode=5230"> 都匀</a>    
+			    </li>
+			    </ul>
+		    <ul id="F">
+			    <li class="pt5">F</li>
+			    <li>
+                <a href="index.do@citycode=2104"> 抚顺</a>    
+                <a href="index.do@citycode=3501"> 福州</a>    
+                <a href="index.do@citycode=4406"> 佛山</a>    
+			    </li>
+			    </ul>
+		    <ul id="G">
+			    <li class="pt5">G</li>
+			    <li>
+                <a href="index.do@citycode=4503"> 桂林</a>    
+                <a href="index.do@citycode=5201"> 贵阳</a>    
+                <a href="index.do@citycode=4401"> 广州</a>    
+                <a href="index.do@citycode=5108"> 广元</a>    
+			    </li>
+			    </ul>
+		    <ul id="H">
+			    <li class="pt5">H</li>
+			    <li>
+                <a href="index.do@citycode=1501"> 呼和浩特</a>    
+                <a href="index.do@citycode=4413"> 惠州</a>    
+                <a href="index.do@citycode=4304"> 衡阳</a>    
+                <a href="index.do@citycode=4601"> 海口</a>    
+                <a href="index.do@citycode=3717"> 菏泽</a>    
+                <a href="index.do@citycode=1507"> 呼伦贝尔</a>    
+                <a href="index.do@citycode=3401"> 合肥</a>    
+                <a href="index.do@citycode=4312"> 怀化</a>    
+                <a href="index.do@citycode=3208"> 淮安</a>    
+                <a href="index.do@citycode=3301"> 杭州</a>    
+			    </li>
+			    </ul>
+		    <ul id="J">
+			    <li class="pt5">J</li>
+			    <li>
+                <a href="index.do@citycode=3304"> 嘉兴</a>    
+                <a href="index.do@citycode=3701"> 济南</a>    
+                <a href="index.do@citycode=4407"> 江门</a>    
+			    </li>
+			    </ul>
+		    <ul id="K">
+			    <li class="pt5">K</li>
+			    <li>
+                <a href="index.do@citycode=5228"> 凯里</a>    
+			    </li>
+			    </ul>
+		    <ul id="L">
+			    <li class="pt5">L</li>
+			    <li>
+                <a href="index.do@citycode=3715"> 聊城</a>    
+                <a href="index.do@citycode=4313"> 娄底</a>    
+                <a href="index.do@citycode=5202"> 六盘水</a>    
+                <a href="index.do@citycode=3712"> 莱芜</a>    
+                <a href="index.do@citycode=3207"> 连云港</a>    
+			    </li>
+			    </ul>
+		    <ul id="N">
+			    <li class="pt5">N</li>
+			    <li>
+                <a href="index.do@citycode=3302"> 宁波</a>    
+                <a href="index.do@citycode=3201"> 南京</a>    
+                <a href="index.do@citycode=4501"> 南宁</a>    
+                <a href="index.do@citycode=3206"> 南通</a>    
+			    </li>
+			    </ul>
+		    <ul id="P">
+			    <li class="pt5">P</li>
+			    <li>
+                <a href="index.do@citycode=3503"> 莆田</a>    
+			    </li>
+			    </ul>
+		    <ul id="Q">
+			    <li class="pt5">Q</li>
+			    <li>
+                <a href="index.do@citycode=4418"> 清远</a>    
+                <a href="index.do@citycode=3505"> 泉州</a>    
+                <a href="index.do@citycode=3702"> 青岛</a>    
+                <a href="index.do@citycode=1303"> 秦皇岛</a>    
+			    </li>
+			    </ul>
+		    <ul id="S">
+			    <li class="pt5">S</li>
+			    <li>
+                <a href="index.do@citycode=4403"> 深圳</a>    
+                <a href="index.do@citycode=3213"> 宿迁</a>    
+                <a href="index.do@citycode=3205"> 苏州</a>    
+                <a href="index.do@citycode=3504"> 三明</a>    
+                <a href="index.do@citycode=4305"> 邵阳</a>    
+                <a href="index.do@citycode=2101"> 沈阳</a>    
+                <a href="index.do@citycode=3101"> 上海</a>    
+			    </li>
+			    </ul>
+		    <ul id="T">
+			    <li class="pt5">T</li>
+			    <li>
+                <a href="index.do@citycode=3212"> 泰州</a>    
+                <a href="index.do@citycode=3709"> 泰安</a>    
+                <a href="index.do@citycode=5222"> 铜仁地区</a>    
+                <a href="index.do@citycode=1401"> 太原</a>    
+                <a href="index.do@citycode=1201"> 天津</a>    
+			    </li>
+			    </ul>
+		    <ul id="W">
+			    <li class="pt5">W</li>
+			    <li>
+                <a href="index.do@citycode=3707"> 潍坊</a>    
+                <a href="index.do@citycode=4201"> 武汉</a>    
+                <a href="index.do@citycode=3202"> 无锡</a>    
+                <a href="index.do@citycode=3710"> 威海</a>    
+			    </li>
+			    </ul>
+		    <ul id="X">
+			    <li class="pt5">X</li>
+			    <li>
+                <a href="index.do@citycode=3203"> 徐州</a>    
+                <a href="index.do@citycode=6101"> 西安</a>    
+                <a href="index.do@citycode=1305"> 邢台</a>    
+                <a href="index.do@citycode=3502"> 厦门</a>    
+                <a href="index.do@citycode=4303"> 湘潭</a>    
+			    </li>
+			    </ul>
+		    <ul id="Y">
+			    <li class="pt5">Y</li>
+			    <li>
+                <a href="index.do@citycode=4417"> 阳江</a>    
+                <a href="index.do@citycode=3706"> 烟台</a>    
+                <a href="index.do@citycode=3209"> 盐城</a>    
+                <a href="index.do@citycode=4205"> 宜昌</a>    
+                <a href="index.do@citycode=5118"> 雅安</a>    
+                <a href="index.do@citycode=3210"> 扬州</a>    
+			    </li>
+			    </ul>
+		    <ul id="Z">
+			    <li class="pt5">Z</li>
+			    <li>
+                <a href="index.do@citycode=4420"> 中山</a>    
+                <a href="index.do@citycode=4408"> 湛江</a>    
+                <a href="index.do@citycode=5203"> 遵义</a>    
+                <a href="index.do@citycode=3211"> 镇江</a>    
+                <a href="index.do@citycode=4308"> 张家界</a>    
+                <a href="index.do@citycode=5120"> 资阳</a>    
+                <a href="index.do@citycode=3506"> 漳州</a>    
+                <a href="index.do@citycode=4412"> 肇庆</a>    
+                <a href="index.do@citycode=4302"> 株洲</a>    
+                <a href="index.do@citycode=5103"> 自贡</a>    
+			    </li>
+			    </ul>
+</div>
+    </div>
+    </article>
+<article >
+<div class="modebox clearfix">
+  <div class="hd">
+    <h6>本地影院</h6>
+  </div>
+  <div class="m5">
+    <div class="city-list">
+	<span>全部区域</span><b>|</b><a href="javascript:piaolala.tab.show('J_cinema_changeArea','hometop')">换区域</a>
+	</div>
+  </div>
+  <div class="line  clearfix"></div>
+  <div class="cinema-list clearfix">
+    <ul>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73116">星美国际影城长沙悦方店</a></div>
+        <div>地址：长沙市天心区坡子街悦方ID MALL 5楼(黄兴南路步行街)</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73190">长沙沃美影城</a></div>
+        <div>地址：湖南长沙开福区金泰路199号世纪金源购物中心C座一层</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73120">长沙中影今典影院</a></div>
+        <div>地址：长沙市韶山中路421号凯德商业广场2楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=607">金逸国际影城（长沙店）</a></div>
+        <div>地址：长沙市岳麓区桐梓坡路与玉兰路交汇处时代广场4楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73180">长沙太平洋影城（湘府店）</a></div>
+        <div>地址：湖南省长沙市雨花区湘府东路二段459号梦和商业广场四楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73112">长沙王府井影城</a></div>
+        <div>地址：长沙市天心区黄兴中路王府井百货10楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73130">长沙乐田奥特国际影城</a></div>
+        <div>地址：湖南长沙天心区 芙蓉南路三段27号友阿奥特莱斯购物公园17栋2楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73150">潇湘星沙国际影城</a></div>
+        <div>地址：长沙县星沙镇开元中路45号卜蜂莲花东门</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73111">银星时尚国际影城</a></div>
+        <div>地址：长沙市黄兴南路步行商业街中心广场北段E区4楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73160">湖南大剧院</a></div>
+        <div>地址：长沙市芙蓉区韶山北路139号3-4楼</div>
+      </li>
+      <li>
+        <div class="title"><a href="cinemainfo/cinemainfo.do@cinemaCode=73124">长沙幕语汽车影苑</a></div>
+        <div>地址：湖南长沙市河西王陵公园（原望月公园）内</div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div style="margin: 14px 5px;"></div>
+<div class="page clearfix m5">
+<span class="gray" >下一页</span>
+<b>|</b>
+<span class="gray" >上一页</span>
+<b>|</b>
+<span>1/1</span>
+</div>
+
+
+<div style="margin: 14px 5px;"></div>
+<div class="return clearfix m5"><a href="../default.htm">返回首页</a></div>
+</article>
+<article id="J_cinema_changeArea" class="hide">
+	<div class="modebox clearfix">
+		<div class="hd">
+			<h6>更换区域</h6>
+		</div>
+		<div class="city-list m5">
+		<ul>
+		  <li>
+			<a href="index.do@page=1&areacode=4301">全部区域</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430121">长沙县</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430103">天心区</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430111">雨花区</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430105">开福区</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430102">芙蓉区</a>
+			</li>
+		    <li>
+			<a href="index.do@page=1&areacode=430104">岳麓区</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+</article>
+<footer>
+	<div class="gotop1">
+		<a href="#hometop">TOP返回顶部</a>
+	</div>
+	<div class="footnav">
+		<a href="../index.do">电影</a>|<a href="index.do">影院</a>|<a
+			href="../mycenter/index.do">账户</a>
+	</div>
+	<div class="footnav pt5">
+		<a href="../../www.piaolala.com/default.htm">切换到电脑版</a>
+	</div>
+	<div class="foot">
+		<a class="footimg" href="../../cache.piaolala.com/piaolalaapp/default.htm"><img
+			src="../default/green/images/app.png"></a>
+		<p class="f12">票啦啦 版权所有 piaolala.com</p>
+	</div>
+	<!--ipt type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-33079011-1' ]);
+		_gaq.push([ '_trackPageview' ]);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</scri-->
+</footer>
+</body>
+</html>

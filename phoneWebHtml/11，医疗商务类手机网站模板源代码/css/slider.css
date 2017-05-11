@@ -1,0 +1,93 @@
+/*Slider*/
+.slider-relative {
+	position:relative;
+	padding-top:40px;
+}
+.items {
+	display: none;	
+	overflow: hidden;
+}
+.slider-block {
+	position:relative;
+	
+	height:503px;
+	
+}
+.slider {
+	z-index:2;
+	overflow: visible !important;
+	height: 503px;
+	position: absolute;
+	left: 50%;
+	margin-left: -512px;
+	width: 1025px;
+	box-shadow:0 2px 2px #c5c3c3;	
+	
+}
+
+
+.slider .banner{
+	top:387px;
+	text-align: center;
+	left: 0;
+	right:0;
+	padding: 23px  20px 45px;
+	position: absolute;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:48px;
+	line-height:1em;
+	color: #fcfcfd;	
+	width: 100%;
+	background: url(../images/banner.png) 0 0 repeat;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.slider .banner span {
+	color: #f98d0d;
+}
+
+.slider .banner i {
+	font-style: normal;
+	color: #c9e54e;
+}
+
+.slider .banner p {
+	padding-top: 23px;
+	font-size: 24px;
+	color: #bdbdbd;
+}
+
+
+.pagination {
+	bottom: -33px;
+	position: absolute;
+	right: 50%;
+	margin-right:-45px;
+	z-index: 999;
+}
+
+.pagination li {
+	float: left;
+	margin-left: 7px;
+}
+
+.pagination li:first-child {margin-left:0;}
+
+
+.pagination  li a{
+	width: 10px;
+	display: block;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 10px;
+	border:2px solid #000;
+	background:#000;
+	border-radius:50px;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background:none;
+}

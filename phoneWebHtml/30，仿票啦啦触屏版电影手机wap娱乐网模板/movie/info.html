@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>仿票啦啦触屏版电影手机wap娱乐网站模板电影详情</title>
+<meta name="description" content="票啦啦触屏版" />
+<meta charset="utf-8" />
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no;" >
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link href="../default/green/css/common-lib.css" rel="stylesheet" type="text/css" />
+<link href="../default/green/css/film.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../commons/js/zepto.min.js"></script>
+<script type="text/javascript" src="../default/js/js-common-lib.js"></script>
+<!--[if lt IE 9]> 
+<script src="../commons/js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<header id="hometop">
+<div class="top clearfix">
+    <div class="logo"><img src="../default/green/images/pll_logo.png" ></div>
+    <a href="javascript:piaolala.tab.show('J_city_changeArea','hometop')" class="user fw">
+        长沙<i class="sear-arrow"></i>
+  </a>
+</div>
+</header>
+
+<banner>
+	<div class="nav-list f16 fw">
+		<ul>
+			<a href="../index.html"><li class="cur">影片</li></a>
+			<a href="../cinema/index.html"><li >影院</li></a>
+			<a href="../mycenter/index.html"><li >账户</li></a>
+		</ul>
+	</div>
+</banner>
+
+<article id="J_city_changeArea" class="hide">
+<div class="modebox clearfix">
+    <div class="hd">
+    <h6>选择城市</h6>
+    </div>
+    <div class="m5 clearfix">
+    <span class="fl">城市名首字母：</span>
+  </div>
+    <div class="m5 clearfix" id="chaCk">
+    <a id="ch0" class="mr14 bakfw" style="cursor: pointer;" onclick="piaolala.util.cityChang('0');">全部</a>
+    <a id="ch1" style="cursor: pointer;" onclick="piaolala.util.cityChang('1');" class="mr14">A-G</a>
+    <a id="ch2" style="cursor: pointer;" onclick="piaolala.util.cityChang('2');" class=" mr14">H-L</a>
+    <a id="ch3" style="cursor: pointer;" onclick="piaolala.util.cityChang('3');" class=" mr14">M-T</a>
+    <a id="ch4" style="cursor: pointer;" onclick="piaolala.util.cityChang('4');" class=" mr14">W-Z</a>
+    </div>
+    <div class="town_more clearfix">
+		    <ul id="A">
+			    <li class="pt5">A</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=2103"> 鞍山</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5204"> 安顺</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3408"> 安庆</a>    
+			    </li>
+			    </ul>
+		    <ul id="B">
+			    <li class="pt5">B</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=5224"> 毕节</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1101"> 北京</a>    
+			    </li>
+			    </ul>
+		    <ul id="C">
+			    <li class="pt5">C</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=1309"> 沧州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4301"> 长沙</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4307"> 常德</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5101"> 成都</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=2201"> 长春</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3204"> 常州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5001"> 重庆</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4310"> 郴州</a>    
+			    </li>
+			    </ul>
+		    <ul id="D">
+			    <li class="pt5">D</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4419"> 东莞</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3705"> 东营</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5106"> 德阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3714"> 德州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=2102"> 大连</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5230"> 都匀</a>    
+			    </li>
+			    </ul>
+		    <ul id="F">
+			    <li class="pt5">F</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=2104"> 抚顺</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3501"> 福州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4406"> 佛山</a>    
+			    </li>
+			    </ul>
+		    <ul id="G">
+			    <li class="pt5">G</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4503"> 桂林</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5201"> 贵阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4401"> 广州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5108"> 广元</a>    
+			    </li>
+			    </ul>
+		    <ul id="H">
+			    <li class="pt5">H</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=1501"> 呼和浩特</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4413"> 惠州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4304"> 衡阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4601"> 海口</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3717"> 菏泽</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1507"> 呼伦贝尔</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3401"> 合肥</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4312"> 怀化</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3208"> 淮安</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3301"> 杭州</a>    
+			    </li>
+			    </ul>
+		    <ul id="J">
+			    <li class="pt5">J</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3304"> 嘉兴</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3701"> 济南</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4407"> 江门</a>    
+			    </li>
+			    </ul>
+		    <ul id="K">
+			    <li class="pt5">K</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=5228"> 凯里</a>    
+			    </li>
+			    </ul>
+		    <ul id="L">
+			    <li class="pt5">L</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3715"> 聊城</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4313"> 娄底</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5202"> 六盘水</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3712"> 莱芜</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3207"> 连云港</a>    
+			    </li>
+			    </ul>
+		    <ul id="N">
+			    <li class="pt5">N</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3302"> 宁波</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3201"> 南京</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4501"> 南宁</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3206"> 南通</a>    
+			    </li>
+			    </ul>
+		    <ul id="P">
+			    <li class="pt5">P</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3503"> 莆田</a>    
+			    </li>
+			    </ul>
+		    <ul id="Q">
+			    <li class="pt5">Q</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4418"> 清远</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3505"> 泉州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3702"> 青岛</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1303"> 秦皇岛</a>    
+			    </li>
+			    </ul>
+		    <ul id="S">
+			    <li class="pt5">S</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4403"> 深圳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3213"> 宿迁</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3205"> 苏州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3504"> 三明</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4305"> 邵阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=2101"> 沈阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3101"> 上海</a>    
+			    </li>
+			    </ul>
+		    <ul id="T">
+			    <li class="pt5">T</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3212"> 泰州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3709"> 泰安</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5222"> 铜仁地区</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1401"> 太原</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1201"> 天津</a>    
+			    </li>
+			    </ul>
+		    <ul id="W">
+			    <li class="pt5">W</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3707"> 潍坊</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4201"> 武汉</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3202"> 无锡</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3710"> 威海</a>    
+			    </li>
+			    </ul>
+		    <ul id="X">
+			    <li class="pt5">X</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=3203"> 徐州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=6101"> 西安</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=1305"> 邢台</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3502"> 厦门</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4303"> 湘潭</a>    
+			    </li>
+			    </ul>
+		    <ul id="Y">
+			    <li class="pt5">Y</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4417"> 阳江</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3706"> 烟台</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3209"> 盐城</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4205"> 宜昌</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5118"> 雅安</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3210"> 扬州</a>    
+			    </li>
+			    </ul>
+		    <ul id="Z">
+			    <li class="pt5">Z</li>
+			    <li>
+                <a href="info.html@filmcode=20140118103102907&citycode=4420"> 中山</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4408"> 湛江</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5203"> 遵义</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3211"> 镇江</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4308"> 张家界</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5120"> 资阳</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=3506"> 漳州</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4412"> 肇庆</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=4302"> 株洲</a>    
+                <a href="info.html@filmcode=20140118103102907&citycode=5103"> 自贡</a>    
+			    </li>
+			    </ul>
+</div>
+    </div>
+    </article>	<article id="J_movie_info">
+		<div class="modebox clearfix">
+			<div class="hd">
+				<h6>
+					霍比特人：史矛革之战 <span> 8.8</span>
+				</h6>
+			</div>
+			<div class="film_info_hot clearfix">
+				<img src="http://cache.piaolala.com/res/UserFiles/Image/201401/18/20140118103046878362.jpg" class="img100">
+				<ul>
+					<li>影片导演：<span class="black">彼得．杰克逊</span></li>
+					<li>领衔主演：<span class="black">马丁．弗瑞曼 ...</span></li>
+					<li>影片类型：<span class="black">喜剧/冒险</span></li>
+					<li>语言/时长：<span class="black">英语/161分钟</span></li>
+					<div class="more3">
+						<a href="javascript:piaolala.tab.show('J_movie_detail','hometop')">剧情简介和更多信息>></a>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="modebox clearfix" id="plantime">
+			<div class="hd">
+				<h6>放映时刻表</h6>
+			</div>
+			<div class="time-list">
+				 <span class="fw  black ">今天（03-12）</span>  
+				<b>|</b> 
+				 <a href="info.html@filmcode=20140118103102907&time=0&areacode=4301#plantime"> 明天（03-13）</a> 
+			</div>
+			<div class="m5">
+				<div class="city-list">
+					<span>全部区域</span><b>|</b><a href="javascript:piaolala.tab.show('J_movie_changeArea','hometop')">换区域</a>
+				</div>
+			</div>
+			<div class="line  clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">长沙太平洋影城（湘府店）</div>
+				<div class="content clearfix">
+					<span >14:30<b>|</b></span>
+					<span >15:00<b>|</b></span>
+					<span >17:30<b>|</b></span>
+					<span >20:30<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">30元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73180&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">星美国际影城长沙悦方店 （五一广场步行街）</div>
+				<div class="content clearfix">
+					<span >10:20<b>|</b></span>
+					<span >12:55<b>|</b></span>
+					<span >15:05<b>|</b></span>
+					<span class="black">23:10<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">35元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73116&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">长沙沃美影城</div>
+				<div class="content clearfix">
+					<span >11:00<b>|</b></span>
+					<span >14:10<b>|</b></span>
+					<span >17:30<b>|</b></span>
+					<span >19:25<b>|</b></span>
+					<span >20:45<b>|</b></span>
+					<span >22:35<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">35元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73190&type=02">购兑换券</a>
+	                <a class="btn ml20" href="../seat/chooseplan.html@cinemacode=73190&filmcode=20140118103102907&time=-1">选座购票</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">潇湘星沙国际影城</div>
+				<div class="content clearfix">
+					<span >16:30<b>|</b></span>
+					<span >21:00<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">35元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73150&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">长沙幕语汽车影苑</div>
+				<div class="content clearfix">
+					<span >21:00<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">30元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73124&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">金逸国际影城(长沙店）</div>
+				<div class="content clearfix">
+					<span >11:00<b>|</b></span>
+					<span >14:00<b>|</b></span>
+					<span >17:00<b>|</b></span>
+					<span >20:00<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">32元起</span>
+				</div>
+	            <div  class="money clearfix">
+	                <a class="btn ml20" href="../seat/chooseplan.html@cinemacode=607&filmcode=20140118103102907&time=-1">选座购票</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">银星时尚国际影城</div>
+				<div class="content clearfix">
+					<span >12:50<b>|</b></span>
+					<span >15:15<b>|</b></span>
+					<span >20:00<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">25元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73111&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">长沙王府井影城</div>
+				<div class="content clearfix">
+					<span >13:00<b>|</b></span>
+					<span >16:00<b>|</b></span>
+					<span >19:00<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">35元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73112&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div class="m5 clearfix">
+				<div class="cinema-name black">长沙乐田国际影城</div>
+				<div class="content clearfix">
+					<span >12:20<b>|</b></span>
+					<span >15:20<b>|</b></span>
+					<span >18:20<b>|</b></span>
+					<span >21:20<b>|</b></span>
+					
+					
+				</div>
+				<div class="money clearfix">
+					市价：<span class="del">70元 </span>&nbsp;&nbsp;&nbsp;现价：<span
+						class="yellow">36元起</span>
+				</div>
+	            <div  class="money clearfix">
+					<a class="btn" href="../buy/step1.html@cinemacode=73130&type=02">购兑换券</a>
+	            </div>
+			</div>
+			<div class="line pt5 clearfix"></div>
+			<div style="margin: 14px 5px;"></div>
+			<div class="page clearfix m5">
+			<span class="gray" >下一页</span>
+			<b>|</b>
+			<span class="gray" >上一页</span>
+			<b>|</b>
+			<span>1/1</span>
+			</div>
+		</div>
+		<div style="margin: 14px 5px;"></div>
+		<div class="return clearfix"><a href="javascript:history.go(-1);">返回上一级</a></div>
+	</article>
+	<article id="J_movie_detail" class="hide">
+		<div class="modebox clearfix">
+		    <div class="hd">
+		    <h6>影片详情</h6>
+		    </div>
+		    <div class="film_info_more clearfix"> 
+		    <ul>
+		    <li>影片名称： <span class="black fw">霍比特人：史矛革之战</span><span class="yellow">   8.8</span> </li>
+		    <li>影片导演： <span class="black">彼得．杰克逊</span></li>
+		    <li>领衔主演： <span class="black">马丁．弗瑞曼 伊恩．麦克莱恩 奥兰多．布鲁姆 </span></li>
+		    <li>上映日期： <span class="black">2014年02月21日</span></li>
+		    <li>国家地区： <span class="black">美国</span></li>
+		    <li>影片类型： <span class="black">喜剧/冒险</span></li>
+		    <li>语言/时长： <span class="black">英语/161分钟</span></li>
+		    <li>剧情介绍：</li>
+		    <li class="black ti">《霍比特人：史矛革之战》故事紧接着上一部《意外之旅》的结尾，比尔伯和十三个矮人好不容易从半兽人的追杀中逃脱，继续向东方的孤山进发。然而，在幽暗密林的边缘，甘道夫再次与他们分道扬镳，因为他要继续调查“死灵法师”。
+ 　　比尔伯和矮人们进入幽暗密林后，先是受到了巨型蜘蛛的袭击，之后又被居 住在这里的“木精灵”俘虏。幸好比尔伯戴上魔戒逃过一劫，最后把矮人全部解救出来，一行14人乘坐木桶来到了孤山脚下的长湖镇，在这里他们见到了日后杀死巨龙的人类勇士“巴德”。
+ 　　另一边，甘道夫在瑞达加斯特帮助下终于搞清楚了死灵法师的真实身份。而木精灵们此时则面对来自多尔戈多半兽人的入侵，瑟兰迪尔、莱格拉斯父子齐上阵，与他们展开了殊死战斗</li>
+		    </ul> 
+		    </div>
+		    
+		    <div class="m5">
+		   
+		   <a href="javascript:piaolala.tab.show('J_movie_info','hometop')" class="btn-return">返回 </a>
+		    
+		    </div>
+		</div>
+	</article>
+	<article id="J_movie_changeArea" class="hide">
+		<div class="modebox clearfix">
+			<div class="hd">
+				<h6>更换区域</h6>
+			</div>
+			<div class="city-list m5">
+			<ul>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=4301">全部区域</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430121">长沙县</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430103">天心区</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430111">雨花区</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430105">开福区</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430102">芙蓉区</a>
+				</li>
+			 <li>
+				<a href="info.html@filmcode=20140118103102907&time=-1&areacode=430104">岳麓区</a>
+				</li>
+			</ul>
+			</div>
+			
+		</div>
+	</article>
+<footer>
+	<div class="gotop1">
+		<a href="#hometop">TOP返回顶部</a>
+	</div>
+	<div class="footnav">
+		<a href="../index.html">电影</a>|<a href="../cinema/index.html">影院</a>|<a
+			href="../mycenter/index.html">账户</a>
+	</div>
+	<div class="footnav pt5">
+		<a href="../../www.piaolala.com/default.htm">切换到电脑版</a>
+	</div>
+	<div class="foot">
+		<a class="footimg" href="../../cache.piaolala.com/piaolalaapp/default.htm"><img
+			src="../default/green/images/app.png"></a>
+		<p class="f12">票啦啦 版权所有 piaolala.com</p>
+	</div>
+	<!--ipt type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-33079011-1' ]);
+		_gaq.push([ '_trackPageview' ]);
+		(function() {
+			var ga = htmlcument.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == htmlcument.location.protocol ? 'https://ssl'
+					: 'http://www')
+					+ '.google-analytics.com/ga.js';
+			var s = htmlcument.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</scri-->
+</footer>
+</body>
+</html>

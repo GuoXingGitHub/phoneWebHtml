@@ -1,0 +1,95 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, q, th, td, caption, article, aside, figure, figcaption, footer, header, hgroup, nav, section, audio, video {
+    margin: 0;
+    padding: 0
+}
+fieldset, img, iframe {
+    border: 0 none
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+ol, ul {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+caption, th {
+    text-align: left
+}
+em, strong, th {
+    font-style: normal;
+    font-weight: 500
+}
+sup {
+    vertical-align: text-top
+}
+sub {
+    vertical-align: text-bottom
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.clearfix {
+    *zoom: 1
+}
+.c, .clear {
+    clear: both;
+    float: none
+}
+.c {
+    overflow: hidden;
+    height: 0
+}
+html, body {
+    background: #fff;
+    font: 12px/1.5 Arial, simsun;
+    text-align: left
+}
+a {
+    color: #404040;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0
+}
+a:hover {
+    color: #ea5504;
+    text-decoration: none;
+}
+a span, a em, a strong {
+    cursor: pointer
+}
+/**********************************************
+ * common elements
+ * 1.radius setting
+ * 2.margin setting
+ * 3.hidden
+ **********************************************/
+.radius {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.mr {
+    margin: 0 5px;
+}
+.mrb {
+    margin-bottom: 5px;
+}
+.hidden {
+    display: none;
+}
+.fl{float:left}
+.fr{float:right}

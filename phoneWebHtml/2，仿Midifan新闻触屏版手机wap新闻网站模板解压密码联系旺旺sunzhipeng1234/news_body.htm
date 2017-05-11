@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if lt IE 10]> <html class="ie"> <![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+  <meta charset="gbk">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='keywords' content='Moog 注册 Matador 商标，这将会是啥产品？,midifan,我们关注电脑音乐' />
+  <meta name='description' content='Moog 注册 Matador 商标，这将会是啥产品？,midifan：我们关注电脑音乐' />
+  <link rel='stylesheet' href='assets/css/style.css'>
+  <link rel='stylesheet' href='assets/css/flexslider.css'>
+  <script src='http://m.midifan.com/assets/js/jquery-1.8.3.min.js'></script>
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>仿Midifan新闻触屏版手机wap新闻网站模板正文页</title>
+</head>
+<body>
+<header>
+  <nav id="search-container" class="search-wrap toggle-container clearfix hidden">
+    <form action="http://www.midifan.com/modulesearch-advanced.htm" class="search-form">
+      <input type="text" placeholder="搜索全站内容…" class="search-input" name="title">
+      <a href="javascript:void(0)" onclick="$('.search-form').submit()" class="submit">
+        <span class="hidden">搜索</span>
+      </a>
+    </form>
+  </nav>
+  <nav class="top-header clearfix">
+    <ul class="left">
+      <li class="top-profile">
+	          <a href="#profile-container" class="profile-link top-item-inner toggle">
+		<img src="http://image.midifan.com/image/common/noavatar_small.gif" class="avatar-tiny">          <span>
+            <span class="n360">欢迎回来</span>
+            <span href="" class="account-name"></span>
+          </span>
+          <i class="arrow_bak"></i>
+        </a>
+	      </li>
+      <li class="top-hp">
+        <a href="../www.midifan.com/modulenews-detailview-16264.htm@fromM=1" class="top-hp-link top-item-inner">
+          <span class="header-vertical-sep"></span>
+          <span class="n360">切换到</span>桌面版
+        </a>
+      </li>
+    </ul>
+    <div class="global-search right">
+      <a href="#search-container" class="search toggle">
+        <i class="icon icon-search"></i>
+      </a>
+    </div>
+  </nav><!--
+  <nav id="profile-container" class="toggle-container clearfix hidden">
+    <ul class="profile-dropdown">
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">我的录音棚</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">我的评论</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">我的二手</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">我的设备</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">我想知道</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">修改密码</a></li>
+      <li class="profile-dd-item"><a class="profile-dd-link" href="">退出</a></li>
+    </ul>
+  </nav>-->
+  <nav class="top-nav clearfix">
+    <a href="default.htm" class="logo left back-to-home">
+      <i class="icon icon-logo"></i>
+      <h1 class="hidden">Midifan</h1>
+    </a>
+    <div class="monthly right">
+      <a href="#monthly-container" class="monthly-link top-item-inner toggle">
+          <h2 class="issue-title">月刊</h2>
+          <span class="issue-num btn">94</span>
+      </a>
+    </div>
+  </nav>
+  <nav id="monthly-container" class="monthly-wrap toggle-container clearfix hidden">
+    <div class="monthly-extra">
+      <img class="cover-img left" src="http://magazine.midifan.com/94/94__.jpg" alt="第 94 期电子杂志">
+      <div class="monthly-extra-inner">
+        <h2 class="hidden">Midifan 月刊</h2>
+        <h3 class="issue-num">第 94 期电子杂志</h3>
+        <p class="date">2014.1.10 发行</p>
+        <p class="teaser-text">120 页内容，7 篇独门秘籍，5 篇抢先评测，8 篇小贴士</p>
+        <div class="btn-wrap">
+          <a href="../magazine.midifan.com/94/default.htm" class="read-online btn">在线阅读</a>
+          <a href="../magazine.midifan.com/default.htm" class="download-pdf btn">查看往期</a>
+          <a href="../https@itunes.apple.com/cn/app/midifan/id613280892@ls=1&mt=8" class="download-app btn">iOS 应用</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="sec-nav clearfix">
+    <ul class="main-nav">
+      <li>
+        <a class="mn-link current" href="news.php">新闻<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link " href="hardware.php">硬件<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link " href="software.php">软件<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link " href="article.php">技术<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link " href="second.php">二手<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link " href="user.php@order=homeviews">棚友<i class="icon icon-current-label"></i></a>
+      </li>
+      <li>
+        <a class="mn-link mn-expand toggle" href="#menu-container">&equiv;&equiv;</a>
+      </li>
+    </ul>
+    <ul id="menu-container" class="expanded-nav hidden">
+      <li>
+        <a class="mn-link current" href="news.php">新闻</a>
+        <ul class="mn-sub-menu clearfix">
+		  	<li><a class="mn-sub-menu-link" href="news.php@key=_25D3_25B2_25BC_25FE_25D0_25C2_25CE_25C5">硬件新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=_25C8_25ED_25BC_25FE_25D0_25C2_25CE_25C5">软件新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=_25D2_25B5_25BD_25E7_25D0_25C2_25CE_25C5">业界新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=_25B4_25D9_25CF_25FA_25D0_25C2_25CE_25C5">促销新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=_25C5_25E0_25D1_25B5_25D0_25C2_25CE_25C5">培训新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=_25D5_25D0_25C6_25B8_25D0_25C2_25CE_25C5">招聘新闻</a></li>
+			<li><a class="mn-sub-menu-link" href="news.php@key=midiFan_25D0_25C2_25CE_25C5">Midifan 新闻</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="mn-link" href="hardware.php">硬件</a>
+        <ul class="mn-sub-menu clearfix">
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=102">硬件评测</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=5">最近热销的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=4">商家最多的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=usinger">用户最多的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=buyer">最多人想买的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=seller">最多人想卖的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@order=CommentTimes">大家最满意的</a></li>
+			<li><a class="mn-sub-menu-link" href="hardware.php@chinese=1">中国开发的</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="mn-link" href="software.php">软件</a>
+        <ul class="mn-sub-menu clearfix">
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=425">软件评测</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@categoryid=707">iOS 应用</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@categoryid=708">Android 应用</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@isdownload=1">免费软件</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@order=usinger">用户最多的软件</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@order=CommentTimes">大家最满意的软件</a></li>
+			<li><a class="mn-sub-menu-link" href="software.php@chinese=1">中国开发的软件</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="mn-link" href="article.php">技术</a>
+        <ul class="mn-sub-menu clearfix">
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=102">硬件评测</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=425">软件评测</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=101">软件使用指南</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=100">硬件使用指南</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=696">视频</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=426">录音混音</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=427">音乐制作</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=428">电脑音乐</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=429">声音合成</a></li>
+			<li><a class="mn-sub-menu-link" href="article.php@categoryid=430">评论访谈</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="mn-link" href="second.php">二手</a>
+        <ul class="mn-sub-menu clearfix">
+			<li><a class="mn-sub-menu-link" href="second.php@issale=2">最新想买进的二手</a></li>
+			<li><a class="mn-sub-menu-link" href="second.php@issale=1">最新想卖出的二手</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="mn-link" href="user.php@order=homeviews">棚友</a>
+        <ul class="mn-sub-menu clearfix">
+          <li><a class="mn-sub-menu-link" href="user.php@order=uid">最新加入的棚友</a></li>
+          <li><a class="mn-sub-menu-link" href="user.php@order=homeviews">最热闹的棚友</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="page-content article clearfix">
+  <section class="main-content">
+    <div class="main-title clearfix">
+      <h2>Moog 注册 Matador 商标，这将会是啥产品？</h2>
+    </div>
+    <div class="main-info sec">
+      <a href="default.htm" class="name">musiXboy</a>
+      <span class="bull">&middot;</span>
+      <span class="date">2014-02-23</span>
+      <span class="bull">&middot;</span><!--
+      <span class="category">硬件新闻</span>
+      <span class="bull">&middot;</span>-->
+      <a href="default.htm" class="comment">暂无评论</a>
+    </div>
+    <div class="post-content">
+      <p align="center"><a target="_blank" href="../image.midifan.com/data/attach/album/2014/0223/7369_1393094582.jpg" style='max-width:600px'><img src="http://image.midifan.com/data/attach/album/2014/0223/7369_1393094582_thumb.jpg" style='max-width:600px' alt="" /></a></p><p>Matador注册商标被形容为是一个通过带共鸣度的滤波器来提升和降低某个特殊频段从而为了控制音频参数的一个声音频率滤波器。其商标归类在音乐合成器分类下。</p><p>Matador这个名字似乎会是Taurus贝司合成器系列的新成员？</p><p>在<a target="_blank" href="../www.midifan.com/modulenews-detailview-15983.htm">Moog发布Theremini</a>之前，<a target="_blank" href="../www.midifan.com/modulenews-detailview-15874.htm">也有人发现Moog像美国提交联邦商标注册局提交了名为Theremini的商标</a>，说明这种预测方法还是蛮准的应该。<br /></p><br />    </div>
+	<div class="footnote">
+      <p>文章出处 <a href="news_body.php@id=16264">http://m.midifan.com/news_body.php?id=16264</a></p>
+      <p>转载新闻请注明出自 Midifan.com</p>
+    </div>
+
+        <div class="comments sec">
+      <div class="sub-title comments-title clearfix">
+        <h3>共有 <strong>0</strong> 条评论</h3>
+        <a href="javascript:void(0)" class="add-comment right">
+          <i class="icon icon-add-comment"></i>添加评论
+        </a>
+		<script>$(".add-comment").click(function(){$("#comment-box").focus();})</script>
+      </div>
+      
+		<form action="comment.php" class="form" method="post">
+		<input type="hidden" name="ModuleID" value="368">
+		<input type="hidden" name="AssociateID" value="16264">
+		<input type="hidden" name="bycomment" value="0">
+      <div class="post-comment">
+        <div class="clearfix">
+          <h4 class="left title">发表评论</h4>
+          <label class="anon right">
+            <input type="checkbox" name="noname" value="1"> 匿名发表
+          </label>
+        </div>
+        <textarea class="comment-box" name="Content" id="comment-box" cols="30" rows="10"></textarea>
+        <input type="submit" class="base-button red right" name="发表评论">
+        <!--<img src="assets/img/article-imgs/captcha-img.png" alt="验证码" class="captcha-img">
+        <input type="text" placeholder="请输入验证码" class="captcha-input">-->
+      </div>
+	  </form>
+    </div>  </section>
+</section><footer>
+  <section class="footer-nav clearfix">
+		<div class="col">
+			<h4>软件音色</h4>
+<select name="dropdown-1" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="software.php@categoryid=499">铜管</option>
+<option class="footer-nav-link" value="software.php@categoryid=501">民族</option>
+<option class="footer-nav-link" value="software.php@categoryid=502">贝司</option>
+<option class="footer-nav-link" value="software.php@categoryid=504">电钢</option>
+<option class="footer-nav-link" value="software.php@categoryid=513">管弦</option>
+<option class="footer-nav-link" value="software.php@categoryid=503">鼓/打击乐</option>
+<option class="footer-nav-link" value="software.php@categoryid=510">钢琴</option>
+<option class="footer-nav-link" value="software.php@categoryid=508">loop</option>
+<option class="footer-nav-link" value="software.php@categoryid=507">吉他</option>
+<option class="footer-nav-link" value="software.php@categoryid=505">笛子</option>
+<option class="footer-nav-link" value="software.php@categoryid=509">风琴</option>
+<option class="footer-nav-link" value="software.php@categoryid=500">木管</option>
+<option class="footer-nav-link" value="software.php@categoryid=512">综合</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>合成器</h4>
+<select name="dropdown-2" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="software.php@categoryid=497">减法/模拟</option>
+<option class="footer-nav-link" value="software.php@categoryid=514">加法合成</option>
+<option class="footer-nav-link" value="software.php@categoryid=496">AM/FM</option>
+<option class="footer-nav-link" value="software.php@categoryid=520">采样</option>
+<option class="footer-nav-link" value="software.php@categoryid=516">粒子合成</option>
+<option class="footer-nav-link" value="software.php@categoryid=517">混合式</option>
+<option class="footer-nav-link" value="software.php@categoryid=521">半模块化</option>
+<option class="footer-nav-link" value="software.php@categoryid=518">模块化</option>
+<option class="footer-nav-link" value="software.php@categoryid=519">相位失真</option>
+<option class="footer-nav-link" value="software.php@categoryid=562">波形塑形</option>
+<option class="footer-nav-link" value="software.php@categoryid=515">共振峰</option>
+<option class="footer-nav-link" value="software.php@categoryid=654">物理建模</option>
+<option class="footer-nav-link" value="software.php@categoryid=522">其它</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>效果器</h4>
+<select name="dropdown-3" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="software.php@categoryid=529">激励</option>
+<option class="footer-nav-link" value="software.php@categoryid=557">混响</option>
+<option class="footer-nav-link" value="software.php@categoryid=525">延迟/回声</option>
+<option class="footer-nav-link" value="software.php@categoryid=524">消齿音</option>
+<option class="footer-nav-link" value="software.php@categoryid=532">声场扩展</option>
+<option class="footer-nav-link" value="software.php@categoryid=536">调音台</option>
+<option class="footer-nav-link" value="software.php@categoryid=558">移调/时间</option>
+<option class="footer-nav-link" value="software.php@categoryid=530">滤波</option>
+<option class="footer-nav-link" value="software.php@categoryid=528">均衡</option>
+<option class="footer-nav-link" value="software.php@categoryid=531">门限/切片</option>
+<option class="footer-nav-link" value="software.php@categoryid=560">声码器</option>
+<option class="footer-nav-link" value="software.php@categoryid=538">多重效果</option>
+<option class="footer-nav-link" value="software.php@categoryid=679">声像位置</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>效果器</h4>
+<select name="dropdown-4" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="software.php@categoryid=561">降噪</option>
+<option class="footer-nav-link" value="software.php@categoryid=523">频谱/示波</option>
+<option class="footer-nav-link" value="software.php@categoryid=534">母带</option>
+<option class="footer-nav-link" value="software.php@categoryid=533">Lo-Fi</option>
+<option class="footer-nav-link" value="software.php@categoryid=527">动态/压限</option>
+<option class="footer-nav-link" value="software.php@categoryid=537">调制/合唱</option>
+<option class="footer-nav-link" value="software.php@categoryid=526">失真/箱模</option>
+<option class="footer-nav-link" value="software.php@categoryid=551">音频转MIDI</option>
+<option class="footer-nav-link" value="software.php@categoryid=550">声音通路</option>
+<option class="footer-nav-link" value="software.php@categoryid=547">录音机</option>
+<option class="footer-nav-link" value="software.php@categoryid=603">网络化</option>
+<option class="footer-nav-link" value="software.php@categoryid=604">铃声调制</option>
+<option class="footer-nav-link" value="software.php@categoryid=602">调音器</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>独立软件</h4>
+<select name="dropdown-5" onchange="document.location.href=this.options[this.selectedIndex].value;">
+
+				<option class="footer-nav-link" value="software.php@categoryid=544">音频工作站</option>
+				<option class="footer-nav-link" value="software.php@categoryid=543">音乐工作站</option>
+				<option class="footer-nav-link" value="software.php@categoryid=542">MIDI工作站</option>
+				<option class="footer-nav-link" value="software.php@categoryid=518">模块化</option>
+				<option class="footer-nav-link" value="software.php@categoryid=539">音频编辑</option>
+				<option class="footer-nav-link" value="software.php@categoryid=541">插件机架</option>
+				<option class="footer-nav-link" value="software.php@categoryid=545">Tracker</option>
+				<option class="footer-nav-link" value="software.php@categoryid=540">DJ</option>
+				<option class="footer-nav-link" value="software.php@categoryid=559">VJ</option>
+				<option class="footer-nav-link" value="software.php@categoryid=546">步进音序器</option>
+				<option class="footer-nav-link" value="software.php@categoryid=552">插件转换</option>
+				<option class="footer-nav-link" value="software.php@categoryid=553">制谱</option>
+				<option class="footer-nav-link" value="software.php@categoryid=548">编程开发</option>
+
+</select>
+		</div>
+
+		<div class="col">
+			<h4>硬件</h4>
+<select name="dropdown-6" onchange="document.location.href=this.options[this.selectedIndex].value;">
+
+				<option class="footer-nav-link" value="hardware.php@categoryid=307">MIDI键盘</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=309">MIDI控制器</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=306">MIDI接口</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=310">音频接口</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=315">模拟调音台</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=316">数字调音台</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=312">话筒</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=319">耳机</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=313">话放</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=321">耳放</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=317">监听音箱</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=311">DSP处理卡</option>
+				<option class="footer-nav-link" value="hardware.php@categoryid=323">数字效果器</option>
+
+</select>
+		</div>
+
+		<div class="col">
+			<h4>硬件</h4>
+<select name="dropdown-7" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="hardware.php@categoryid=107">合成器</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=303">模拟设备</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=450">DJ</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=451">VJ</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=302">数字钢琴</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=325">吉他效果器</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=320">AD/DA</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=324">动态/均衡</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=314">数字工作站</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=304">录音机</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=301">采样器</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=455">舞曲采样器</option>
+<option class="footer-nav-link" value="hardware.php@categoryid=305">音序器</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>厂商新闻</h4>
+<select name="dropdown-8" onchange="document.location.href=this.options[this.selectedIndex].value;">
+<option class="footer-nav-link" value="news.php@companyid=1001">Ableton</option>
+<option class="footer-nav-link" value="news.php@companyid=1003">Akai</option>
+<option class="footer-nav-link" value="news.php@companyid=1021">Behringer</option>
+<option class="footer-nav-link" value="news.php@companyid=1042">Edirol</option>
+<option class="footer-nav-link" value="news.php@companyid=1047">Focusrite</option>
+<option class="footer-nav-link" value="news.php@companyid=1058">Korg</option>
+<option class="footer-nav-link" value="news.php@companyid=1063">Mackie</option>
+<option class="footer-nav-link" value="news.php@companyid=1067">MOTU</option>
+<option class="footer-nav-link" value="news.php@companyid=1070">PreSonus</option>
+<option class="footer-nav-link" value="news.php@companyid=1146">SSL</option>
+<option class="footer-nav-link" value="news.php@companyid=1085">Tascam</option>
+<option class="footer-nav-link" value="news.php@companyid=1083">Steinberg</option>
+<option class="footer-nav-link" value="news.php@companyid=1092">Waves</option>
+</select>
+		</div>
+
+		<div class="col">
+			<h4>厂商新闻</h4>
+				<select name="dropdown-9" onchange="document.location.href=this.options[this.selectedIndex].value;">
+				<option class="footer-nav-link" value="news.php@companyid=1005">Alesis</option>
+				<option class="footer-nav-link" value="news.php@companyid=1019">Avid</option>
+				<option class="footer-nav-link" value="news.php@companyid=1027">Cakewalk</option>
+				<option class="footer-nav-link" value="news.php@companyid=1043">ESI</option>
+				<option class="footer-nav-link" value="news.php@companyid=1465">iCON</option>
+				<option class="footer-nav-link" value="news.php@companyid=1060">Lexicon</option>
+				<option class="footer-nav-link" value="news.php@companyid=1062">M-Audio</option>
+				<option class="footer-nav-link" value="news.php@companyid=1109">NI</option>
+				<option class="footer-nav-link" value="news.php@companyid=1069">Novation</option>
+				<option class="footer-nav-link" value="news.php@companyid=1072">RME</option>
+				<option class="footer-nav-link" value="news.php@companyid=1074">Roland</option>
+				<option class="footer-nav-link" value="news.php@companyid=1089">UAudio</option>
+				<option class="footer-nav-link" value="news.php@companyid=1094">Yamaha</option>
+				</select>
+		</div>
+  </section>
+
+  <section class="footer-info">
+    <h2 class="logo icon">
+      <span class="hidden">Midifan</span>
+    </h2>
+    <div class="content">
+      <div>
+        <a href="default.htm" class="footer-info-link">关于</a>
+        <span class="bull">&middot;</span>
+        <a href="default.htm" class="footer-info-link">联系</a>
+        <span class="bull">&middot;</span>
+        <a href="default.htm" class="footer-info-link">iPhone / iPad 应用</a>
+        <span class="bull">&middot;</span>
+        <a href="#" class="footer-info-link"><i class="icon icon-fold"></i> 返回顶部</a>
+      </div>
+      <div>
+        <span>Copyright ? 2000 - 2014 Midifan.com</span>
+      </div>
+    </div>
+  </section>
+</footer>
+<script src='http://m.midifan.com/assets/js/jquery.flexslider-min.js'></script>
+<script src='http://m.midifan.com/assets/js/app.js'></script>
+<script>
+//支持反对，用JS跳转
+$('.floweregg').click(function() {
+	var url = $(this).data('url')+'?ajax=1&callback=?';
+	var cobj = $(this).data('type')+$(this).data('cid');
+	$.getJSON(url, function(e) {
+		if(e == -1) {
+			alert('数据错误！');
+		} else if(e == -2) {
+			alert('您曾经对这条评论做出过评价！');
+		} else if(e == 2) {
+			$('#'+cobj).html( $('#'+cobj).html() * 1 + 1);
+			alert('评价成功！');
+		} else {
+			alert('操作异常！');
+		}
+	});
+});
+//留言回复
+$('.meta .reply').click(function(){
+	var cid = $(this).data('commentid');
+	var uname = $(this).data('uname');
+	setTimeout(function(){
+		$('#comment-box').focus();
+		$('#bycomment').val(cid);
+		$('#comment-box').html('');
+		$('#comment-box').html('回复 '+uname+'：');
+
+	}, 100);
+})
+</script>
+</body>
+</html>

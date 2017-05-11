@@ -1,0 +1,21 @@
+.linebox{ font: 12px/1.5 Arial,Helvetica,sans-serif; color:#474747; }
+img{ border:0px;}
+/* -----clear------*/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+.lineimg img{ width:100%;}
+.line_main{ width:100%;}
+.ownexpense h1{ background-color: #F5F5F5; color: #333; font-size:110%; margin: 0; padding:8px 0 3px 10px; clear:both;}
+.ownexpense h2{ color: #333; font-size:100%; padding:5px 10px;}
+.line_main .aboutline h4{ background-color: #FDF5DB; color: #FF0000; font-size:110%; padding:8px 0 3px 10px; margin:8px 0; line-height:16px;}
+.aboutline{ clear:both; line-height:20px;}
+.aboutline img{ width:35%; margin-right:5px;}
+.ownexpense dl{ margin:10px 0;}
+.ownexpense dl dt{ font-weight:bold;}
+.ownexpense dl dd,.ownexpense dl dt{ line-height:18px; margin-bottom:5px; padding-left:12px;}
+.lorange{ color:#f50;}
+.lred{ color:#f00;}
